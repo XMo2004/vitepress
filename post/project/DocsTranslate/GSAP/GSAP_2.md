@@ -42,4 +42,25 @@ GSAP 是“框架无关的”，这意味着它可以在 React、Webflow、Wordp
 
 ## 安装
 
+::: code-group
+
+```sh [npm]
+npm install gsap
+```
+
+```sh [CDN]
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+```
+
+```sh [yarn]
+yarn add gsap
+```
+
+:::
+
+### 插件
+
+
+### 缓动函数
+
 
