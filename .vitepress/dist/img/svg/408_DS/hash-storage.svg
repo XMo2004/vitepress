@@ -1,0 +1,26 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-pink" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#9d174d"/>
+    </marker>
+  </defs>
+  <!-- 散列函数 -->
+  <circle cx="8" cy="12" r="6" fill="none" stroke="#9d174d" stroke-width="1"/>
+  <text x="8" y="14" text-anchor="middle" fill="#9d174d" font-size="4" font-weight="bold">H(k)</text>
+  <!-- 输入 -->
+  <rect x="2" y="24" width="4" height="4" fill="#9d174d" rx="0.5"/>
+  <text x="4" y="27" text-anchor="middle" fill="white" font-size="3" font-weight="bold">K</text>
+  <!-- 散列表 -->
+  <rect x="20" y="8" width="16" height="24" fill="none" stroke="#9d174d" stroke-width="1" rx="1"/>
+  <rect x="21" y="10" width="14" height="4" fill="#be185d" rx="0.5"/>
+  <rect x="21" y="16" width="14" height="4" fill="#be185d" rx="0.5"/>
+  <rect x="21" y="22" width="14" height="4" fill="#be185d" rx="0.5"/>
+  <rect x="21" y="28" width="14" height="4" fill="#be185d" rx="0.5"/>
+  <!-- 箭头 -->
+  <path d="M6 26 L6 18" stroke="#9d174d" stroke-width="1" marker-end="url(#arrow-pink)"/>
+  <path d="M14 12 L20 12" stroke="#9d174d" stroke-width="1" marker-end="url(#arrow-pink)"/>
+  <text x="28" y="13" text-anchor="middle" fill="white" font-size="3" font-weight="bold">0</text>
+  <text x="28" y="19" text-anchor="middle" fill="white" font-size="3" font-weight="bold">1</text>
+  <text x="28" y="25" text-anchor="middle" fill="white" font-size="3" font-weight="bold">2</text>
+  <text x="28" y="31" text-anchor="middle" fill="white" font-size="3" font-weight="bold">3</text>
+</svg>

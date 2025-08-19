@@ -1,0 +1,24 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="qualityGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0.1"/>
+    </radialGradient>
+  </defs>
+  <!-- 背景圆 -->
+  <circle cx="40" cy="40" r="35" fill="url(#qualityGradient)" stroke="#fbbf24" stroke-width="2"/>
+  <!-- 正确性 -->
+  <circle cx="25" cy="25" r="8" fill="#10b981" opacity="0.8"/>
+  <text x="25" y="28" text-anchor="middle" fill="white" font-size="6" font-weight="bold">正确</text>
+  <!-- 可读性 -->
+  <circle cx="55" cy="25" r="8" fill="#3b82f6" opacity="0.8"/>
+  <text x="55" y="28" text-anchor="middle" fill="white" font-size="6" font-weight="bold">易读</text>
+  <!-- 健壮性 -->
+  <circle cx="25" cy="55" r="8" fill="#dc2626" opacity="0.8"/>
+  <text x="25" y="58" text-anchor="middle" fill="white" font-size="6" font-weight="bold">健壮</text>
+  <!-- 高效性 -->
+  <circle cx="55" cy="55" r="8" fill="#eab308" opacity="0.8"/>
+  <text x="55" y="58" text-anchor="middle" fill="white" font-size="6" font-weight="bold">高效</text>
+  <!-- 中心标题 -->
+  <text x="40" y="42" text-anchor="middle" fill="#374151" font-size="8" font-weight="bold">算法质量</text>
+</svg>

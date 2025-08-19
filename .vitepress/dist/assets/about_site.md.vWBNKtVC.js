@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./chunks/framework.B63Sb1io.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"about/site.md","filePath":"about/site.md","lastUpdated":1755592887000}'),s={name:"about/site.md"};function o(r,c,n,i,d,p){return a(),e("div")}const f=t(s,[["render",o]]);export{m as __pageData,f as default};
