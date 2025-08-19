@@ -35,9 +35,9 @@ export default defineConfig({
           {
             text: '基础',
             items: [
-              { text: 'HTML', link: '/frontend/HTML/HTML_1' },
-              { text: 'CSS', link: '/frontend/CSS/CSS_1' },
-              { text: 'JavaScript', link: '/frontend/JavaScript/JavaScript_1' }
+              { text: 'HTML', link: '/post/frontend/basic/HTML/HTML_1' },
+              { text: 'CSS', link: '/post/frontend/basic/CSS/CSS_1' },
+              { text: 'JavaScript', link: '/post/frontend/basic/JavaScript/JS_1' }
             ]
           },
           {
@@ -62,13 +62,13 @@ export default defineConfig({
       },
       { text: '编程语言',
         items: [
-          { text: 'C', link: '/language/C' },
-          { text: 'C++', link: '/language/C++' },
-          { text: 'Python', link: '/language/Python' },
-          { text: 'Java', link: '/language/Java' },
-          { text: 'Go', link: '/language/Go' },
-          { text: 'TypeScript', link: '/language/TypeScript' },
-          { text: 'Swift', link: '/language/Swift' }
+          { text: 'C', link: '/post/language/C' },
+          { text: 'C++', link: '/post/language/C++' },
+          { text: 'Python', link: '/post/language/Python' },
+          { text: 'Java', link: '/post/language/Java' },
+          { text: 'Go', link: '/post/language/Go' },
+          { text: 'TypeScript', link: '/post/language/TypeScript' },
+          { text: 'Swift', link: '/post/language/Swift' }
         ]
       },
       { text: '408笔记',
@@ -82,7 +82,7 @@ export default defineConfig({
       {
         text: '考研笔记',
         items: [
-          { text: '考研数学', link: '/AdvancedMath/AdvancedMath_1' },
+          { text: '考研数学', link: '/post/AdvancedMath/AdvancedMath_1' },
           { text: '考研英语', link: '···' },
           { text: '考研政治', link: '···' },
         ]
@@ -91,6 +91,7 @@ export default defineConfig({
         items: [
           { text: '我的博客', link: '...' },
           { text: '我的相册', link: '...' },
+          { text: '中文文档', link: '/post/project/DocsTranslate/DocsTranslate' },
           { text: '组件使用示例', link: '/components-demo' },
         ]
       },
@@ -101,9 +102,8 @@ export default defineConfig({
         ]
       }
     ],
-
     sidebar: {
-      '/frontend/': [
+      '/post/frontend/basic/': [
         {
           text: 'HTML',
           collapsed: true,
@@ -112,21 +112,21 @@ export default defineConfig({
               text: 'HTML 初识',
               collapsed: true,
               items: [
-                { text: '01 基本概念', link: '/frontend/HTML/HTML_1' },
-                { text: '02 初体验', link: '/frontend/HTML/HTML_2' },
-                { text: '03 语法规范', link: '/frontend/HTML/HTML_3' },
-                { text: '04 标签学习', link: '/frontend/HTML/HTML_4' }
+                { text: '01 基本概念', link: '/post/frontend/basic/HTML/HTML_1' },
+                { text: '02 初体验', link: '/post/frontend/basic/HTML/HTML_2' },
+                { text: '03 语法规范', link: '/post/frontend/basic/HTML/HTML_3' },
+                { text: '04 标签学习', link: '/post/frontend/basic/HTML/HTML_4' }
               ]
             },
             {
               text: 'HTML 基础',
               collapsed: true,
               items: [
-                { text: '01 列表标签', link: '/frontend/HTML/HTML_5' },
-                { text: '02 表格标签', link: '/frontend/HTML/HTML_6' },
-                { text: '03 表单标签', link: '/frontend/HTML/HTML_7' },
-                { text: '04 语义化标签', link: '/frontend/HTML/HTML_8' },
-                { text: '05 字符实体', link: '/frontend/HTML/HTML_9' },
+                { text: '01 列表标签', link: '/post/frontend/basic/HTML/HTML_5' },
+                { text: '02 表格标签', link: '/post/frontend/basic/HTML/HTML_6' },
+                { text: '03 表单标签', link: '/post/frontend/basic/HTML/HTML_7' },
+                { text: '04 语义化标签', link: '/post/frontend/basic/HTML/HTML_8' },
+                { text: '05 字符实体', link: '/post/frontend/basic/HTML/HTML_9' },
               ]
             } 
           ]
@@ -139,50 +139,50 @@ export default defineConfig({
               text: 'CSS 基础',
               collapsed: true,
               items: [
-                { text: '01 基础认知', link: '/frontend/CSS/CSS_1' },
-                { text: '02 基础选择器', link: '/frontend/CSS/CSS_2' },
-                { text: '03 字体和文本样式', link: '/frontend/CSS/CSS_3' },
-                { text: '04 其他', link: '/frontend/CSS/CSS_4' }
+                { text: '01 基础认知', link: '/post/frontend/basic/CSS/CSS_1' },
+                { text: '02 基础选择器', link: '/post/frontend/basic/CSS/CSS_2' },
+                { text: '03 字体和文本样式', link: '/post/frontend/basic/CSS/CSS_3' },
+                { text: '04 其他', link: '/post/frontend/basic/CSS/CSS_4' }
               ]
             },
             {
               text: 'CSS 进阶',
               collapsed: true,
               items: [
-                { text: '01 选择器进阶', link: '/frontend/CSS/CSS_5' },
-                { text: '02 背景相关属性', link: '/frontend/CSS/CSS_6' },
-                { text: '03 元素显示模式', link: '/frontend/CSS/CSS_7' },
-                { text: '04 CSS 特性', link: '/frontend/CSS/CSS_8' }
+                { text: '01 选择器进阶', link: '/post/frontend/basic/CSS/CSS_5' },
+                { text: '02 背景相关属性', link: '/post/frontend/basic/CSS/CSS_6' },
+                { text: '03 元素显示模式', link: '/post/frontend/basic/CSS/CSS_7' },
+                { text: '04 CSS 特性', link: '/post/frontend/basic/CSS/CSS_8' }
               ]
             },
             {
               text: 'CSS 盒子模型',
               collapsed: true,
               items: [
-                { text: '01 盒子模型介绍', link: '/frontend/CSS/CSS_9' },
-                { text: '02 内容区域的宽度和高度', link: '/frontend/CSS/CSS_10' },
-                { text: '03 边框（border）', link: '/frontend/CSS/CSS_11' },
-                { text: '04 内边距（padding）', link: '/frontend/CSS/CSS_12' },
-                { text: '05 外边距（margin）', link: '/frontend/CSS/CSS_13' }
+                { text: '01 盒子模型介绍', link: '/post/frontend/basic/CSS/CSS_9' },
+                { text: '02 内容区域的宽度和高度', link: '/post/frontend/basic/CSS/CSS_10' },
+                { text: '03 边框（border）', link: '/post/frontend/basic/CSS/CSS_11' },
+                { text: '04 内边距（padding）', link: '/post/frontend/basic/CSS/CSS_12' },
+                { text: '05 外边距（margin）', link: '/post/frontend/basic/CSS/CSS_13' }
               ]
             },
             {
               text: 'CSS 浮动',
               collapsed: true,
               items: [
-                { text: '01 结构伪类选择器', link: '/frontend/CSS/CSS_14' },
-                { text: '02 伪元素', link: '/frontend/CSS/CSS_15' },
-                { text: '03 标准流', link: '/frontend/CSS/CSS_16' },
-                { text: '04 浮动', link: '/frontend/CSS/CSS_17' },
-                { text: '05 清除浮动', link: '/frontend/CSS/CSS_18' }
+                { text: '01 结构伪类选择器', link: '/post/frontend/basic/CSS/CSS_14' },
+                { text: '02 伪元素', link: '/post/frontend/basic/CSS/CSS_15' },
+                { text: '03 标准流', link: '/post/frontend/basic/CSS/CSS_16' },
+                { text: '04 浮动', link: '/post/frontend/basic/CSS/CSS_17' },
+                { text: '05 清除浮动', link: '/post/frontend/basic/CSS/CSS_18' }
               ]
             },
             {
               text: 'CSS 定位和装饰',
               collapsed: true,
               items: [
-                { text: '01 定位', link: '/frontend/CSS/CSS_19' },
-                { text: '02 装饰', link: '/frontend/CSS/CSS_20' },
+                { text: '01 定位', link: '/post/frontend/basic/CSS/CSS_19' },
+                { text: '02 装饰', link: '/post/frontend/basic/CSS/CSS_20' },
               ]
             }
           ]
@@ -198,109 +198,109 @@ export default defineConfig({
                 { text: '初识',
                   collapsed: true,
                   items: [
-                    { text: '01 前端的三大核心', link: '/frontend/JavaScript/JS_1' },
-                    { text: '02 编程语言', link: '/frontend/JavaScript/JS_2' },
-                    { text: '03 初识JavaScript', link: '/frontend/JavaScript/JS_3' }
+                    { text: '01 前端的三大核心', link: '/post/frontend/basic/JavaScript/JS_1' },
+                    { text: '02 编程语言', link: '/post/frontend/basic/JavaScript/JS_2' },
+                    { text: '03 初识JavaScript', link: '/post/frontend/basic/JavaScript/JS_3' }
                   ]
                 },
                 {
                   text: '基本语法',
                   collapsed: true,
                   items: [
-                    { text: '01 基本语法', link: '/frontend/JavaScript/JS_4' },
-                    { text: '02 变量', link: '/frontend/JavaScript/JS_5' },
-                    { text: '03 数据类型', link: '/frontend/JavaScript/JS_6' }
+                    { text: '01 基本语法', link: '/post/frontend/basic/JavaScript/JS_4' },
+                    { text: '02 变量', link: '/post/frontend/basic/JavaScript/JS_5' },
+                    { text: '03 数据类型', link: '/post/frontend/basic/JavaScript/JS_6' }
                   ]
                 },
                 {
                   text: '流程控制',
                   collapsed: true,
                   items: [
-                    { text: '01 运算符', link: '/frontend/JavaScript/JS_7' },
-                    { text: '02 程序控制结构', link: '/frontend/JavaScript/JS_8' },
-                    { text: '03 分支结构', link: '/frontend/JavaScript/JS_9' },
-                    { text: '04 循环结构', link: '/frontend/JavaScript/JS_10' }
+                    { text: '01 运算符', link: '/post/frontend/basic/JavaScript/JS_7' },
+                    { text: '02 程序控制结构', link: '/post/frontend/basic/JavaScript/JS_8' },
+                    { text: '03 分支结构', link: '/post/frontend/basic/JavaScript/JS_9' },
+                    { text: '04 循环结构', link: '/post/frontend/basic/JavaScript/JS_10' }
                   ]
                 },
                 {
                   text: '函数',
                   collapsed: true,
                   items: [
-                    { text: '01 初识函数', link: '/frontend/JavaScript/JS_11' },
-                    { text: '02 函数的声明和调用', link: '/frontend/JavaScript/JS_12' },
-                    { text: '03 函数的递归调用', link: '/frontend/JavaScript/JS_13' },
-                    { text: '04 全局变量和局部变量', link: '/frontend/JavaScript/JS_14' },
-                    { text: '05 函数表达式', link: '/frontend/JavaScript/JS_15' },
-                    { text: '06 函数是头等公民', link: '/frontend/JavaScript/JS_16' },
-                    { text: '07 立即执行函数', link: '/frontend/JavaScript/JS_17' }
+                    { text: '01 初识函数', link: '/post/frontend/basic/JavaScript/JS_11' },
+                    { text: '02 函数的声明和调用', link: '/post/frontend/basic/JavaScript/JS_12' },
+                    { text: '03 函数的递归调用', link: '/post/frontend/basic/JavaScript/JS_13' },
+                    { text: '04 全局变量和局部变量', link: '/post/frontend/basic/JavaScript/JS_14' },
+                    { text: '05 函数表达式', link: '/post/frontend/basic/JavaScript/JS_15' },
+                    { text: '06 函数是头等公民', link: '/post/frontend/basic/JavaScript/JS_16' },
+                    { text: '07 立即执行函数', link: '/post/frontend/basic/JavaScript/JS_17' }
                   ]
                 },
                 {
                   text: '面向对象',
                   collapsed: true,
                   items: [
-                    { text: '01 对象类型的使用', link: '/frontend/JavaScript/JS_18' },
-                    { text: '02 值类型和引用类型', link: '/frontend/JavaScript/JS_19' },
-                    { text: '03 函数的this指向', link: '/frontend/JavaScript/JS_20' },
-                    { text: '04 类和对象', link: '/frontend/JavaScript/JS_21' }
+                    { text: '01 对象类型的使用', link: '/post/frontend/basic/JavaScript/JS_18' },
+                    { text: '02 值类型和引用类型', link: '/post/frontend/basic/JavaScript/JS_19' },
+                    { text: '03 函数的this指向', link: '/post/frontend/basic/JavaScript/JS_20' },
+                    { text: '04 类和对象', link: '/post/frontend/basic/JavaScript/JS_21' }
                   ]
                 },
                 {
                   text: '内置类',
                   collapsed: true,
                   items: [
-                    { text: '01 自动装箱和拆箱', link: '/frontend/JavaScript/JS_22' },
-                    { text: '02 数字类型 Number', link: '/frontend/JavaScript/JS_23' },
-                    { text: '03 数学对象 Math', link: '/frontend/JavaScript/JS_24' },
-                    { text: '04 字符串对象 String', link: '/frontend/JavaScript/JS_25' },
-                    { text: '05 日期对象 Date', link: '/frontend/JavaScript/JS_26' },
+                    { text: '01 自动装箱和拆箱', link: '/post/frontend/basic/JavaScript/JS_22' },
+                    { text: '02 数字类型 Number', link: '/post/frontend/basic/JavaScript/JS_23' },
+                    { text: '03 数学对象 Math', link: '/post/frontend/basic/JavaScript/JS_24' },
+                    { text: '04 字符串对象 String', link: '/post/frontend/basic/JavaScript/JS_25' },
+                    { text: '05 日期对象 Date', link: '/post/frontend/basic/JavaScript/JS_26' },
                   ]
                 },
                 {
                   text: '数组',
                   collapsed: true,
                   items: [
-                    { text: '01 认识数组', link: '/frontend/JavaScript/JS_27' },
-                    { text: '02 数组的基本操作', link: '/frontend/JavaScript/JS_28' },
-                    { text: '03 数组中元素的添加和删除', link: '/frontend/JavaScript/JS_29' },
-                    { text: '04 数组的常规操作', link: '/frontend/JavaScript/JS_30' },
-                    { text: '05 数组中的常用方法', link: '/frontend/JavaScript/JS_31' },
+                    { text: '01 认识数组', link: '/post/frontend/basic/JavaScript/JS_27' },
+                    { text: '02 数组的基本操作', link: '/post/frontend/basic/JavaScript/JS_28' },
+                    { text: '03 数组中元素的添加和删除', link: '/post/frontend/basic/JavaScript/JS_29' },
+                    { text: '04 数组的常规操作', link: '/post/frontend/basic/JavaScript/JS_30' },
+                    { text: '05 数组中的常用方法', link: '/post/frontend/basic/JavaScript/JS_31' },
                   ]
                 },
                 {
                   text: 'DOM操作（一）',
                   collapsed: true,
                   items: [
-                    { text: '01 扫清概念', link: '/frontend/JavaScript/JS_32' },
-                    { text: '02 导航', link: '/frontend/JavaScript/JS_33' },
-                    { text: '03 获取任意元素', link: '/frontend/JavaScript/JS_34' },
-                    { text: '04 Node 节点常见的属性 ', link: '/frontend/JavaScript/JS_35' },
+                    { text: '01 扫清概念', link: '/post/frontend/basic/JavaScript/JS_32' },
+                    { text: '02 导航', link: '/post/frontend/basic/JavaScript/JS_33' },
+                    { text: '03 获取任意元素', link: '/post/frontend/basic/JavaScript/JS_34' },
+                    { text: '04 Node 节点常见的属性 ', link: '/post/frontend/basic/JavaScript/JS_35' },
                   ]
                 },
                 {
                   text: 'DOM操作（二）',
                   collapsed: true,
                   items: [
-                    { text: '01 元素的属性', link: '/frontend/JavaScript/JS_36' },
-                    { text: '02 对象的属性', link: '/frontend/JavaScript/JS_37' },
-                    { text: '03 data-* 自定义属性', link: '/frontend/JavaScript/JS_38' },
-                    { text: '04 动态修改样式', link: '/frontend/JavaScript/JS_39' },
-                    { text: '05 手动操作DOM', link: '/frontend/JavaScript/JS_40' },
-                    { text: '06 元素的大小和滚动', link: '/frontend/JavaScript/JS_41' },
-                    { text: '07 window 的大小和滚动', link: '/frontend/JavaScript/JS_42' },
+                    { text: '01 元素的属性', link: '/post/frontend/basic/JavaScript/JS_36' },
+                    { text: '02 对象的属性', link: '/post/frontend/basic/JavaScript/JS_37' },
+                    { text: '03 data-* 自定义属性', link: '/post/frontend/basic/JavaScript/JS_38' },
+                    { text: '04 动态修改样式', link: '/post/frontend/basic/JavaScript/JS_39' },
+                    { text: '05 手动操作DOM', link: '/post/frontend/basic/JavaScript/JS_40' },
+                    { text: '06 元素的大小和滚动', link: '/post/frontend/basic/JavaScript/JS_41' },
+                    { text: '07 window 的大小和滚动', link: '/post/frontend/basic/JavaScript/JS_42' },
                   ]
                 },
                 {
                   text: '事件处理',
                   collapsed: true,
                   items: [
-                    { text: '01 认识事件处理', link: '/frontend/JavaScript/JS_43' },
-                    { text: '02 事件冒泡和事件获取', link: '/frontend/JavaScript/JS_44' },
-                    { text: '03 事件对象 event', link: '/frontend/JavaScript/JS_45' },
-                    { text: '04 EventTarget 的使用', link: '/frontend/JavaScript/JS_46' },
-                    { text: '05 事件委托模式', link: '/frontend/JavaScript/JS_47' },
-                    { text: '06 常见事件类型', link: '/frontend/JavaScript/JS_48' },
-                    { text: '07 定时器', link: '/frontend/JavaScript/JS_49' },
+                    { text: '01 认识事件处理', link: '/post/frontend/basic/JavaScript/JS_43' },
+                    { text: '02 事件冒泡和事件获取', link: '/post/frontend/basic/JavaScript/JS_44' },
+                    { text: '03 事件对象 event', link: '/post/frontend/basic/JavaScript/JS_45' },
+                    { text: '04 EventTarget 的使用', link: '/post/frontend/basic/JavaScript/JS_46' },
+                    { text: '05 事件委托模式', link: '/post/frontend/basic/JavaScript/JS_47' },
+                    { text: '06 常见事件类型', link: '/post/frontend/basic/JavaScript/JS_48' },
+                    { text: '07 定时器', link: '/post/frontend/basic/JavaScript/JS_49' },
                   ]
                 },
                 {
