@@ -110,7 +110,7 @@ onMounted(() => {
   box-shadow: 
     0 8px 32px rgba(0, 255, 255, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 25px 35px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
@@ -123,7 +123,7 @@ onMounted(() => {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 2px;
   background: linear-gradient(45deg, 
     #00ffff, 
@@ -154,7 +154,7 @@ onMounted(() => {
 .custom-block {
   margin: 16px 0;
   border: 1px solid transparent;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 20px;
   line-height: 26px;
   font-size: 15px;

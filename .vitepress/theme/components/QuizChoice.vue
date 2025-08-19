@@ -95,7 +95,7 @@ const getOptionLabel = (index: number) => {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 30px 40px 20px 40px;
   margin: 25px 0 25px 0;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -120,7 +120,7 @@ const getOptionLabel = (index: number) => {
   width: auto;
   padding: 6px 16px;
   margin-bottom: 4px;
-  border-radius: 25px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
   background-color: var(--vp-c-bg);

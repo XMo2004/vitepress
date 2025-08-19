@@ -29,11 +29,10 @@ const props = withDefaults(defineProps<Props>(), {
 /* 卡片背景 */
 .linkcard {
     background-color: var(--vp-c-bg-soft);
-    border-radius: 8px;
     padding: 8px 16px 8px 8px;
     transition: color 0.5s, background-color 0.5s;
     margin-top: 15px;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 /* 卡片鼠标悬停 */

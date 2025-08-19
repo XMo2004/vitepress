@@ -110,7 +110,7 @@
 /* 容器块圆角 */
 .custom-block {
   padding: 30px;
-  border-radius: 25px;
+  border-radius: 10px;
   font-size: 16px;
 }
 
@@ -143,7 +143,7 @@
 /* 代码块 */
 .vp-doc div[class*=language-]{
   padding-top: 20px;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 /* 代码块语言标签位置调整 */
@@ -176,7 +176,7 @@
 /* 设置details容器 */
 .details.custom-block {
     background-color: #ffec602c;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .details.custom-block summary {
