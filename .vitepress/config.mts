@@ -1024,7 +1024,16 @@ export default defineConfig({
             { text: '01 408格式标准', link: '/standard/standard_4' },
           ]
         },
-      ]
+      ],
+      '/post/project/DocsTranslate/GSAP': [
+        {
+          text: '快速开始',
+          collapsed: true,
+          items: [
+            { text: '安装', link: '/post/project/DocsTranslate/GSAP/GSAP_2' },
+          ]
+        },
+      ],
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/XMo2004' },
