@@ -1,0 +1,54 @@
+/* 导航栏毛玻璃效果 */
+:root {
+
+    /* 首页下滑后导航透明 */
+    .VPNavBar:not(.has-sidebar):not(.home.top) {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+    }
+
+    /* 搜索框透明 */
+    .DocSearch-Button {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+    }
+
+    /* 文档页侧边栏顶部透明 */
+    .curtain {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+    }
+
+    @media (min-width: 960px) {
+
+        /* 文档页导航中间透明 */
+        .VPNavBar:not(.home.top) .content-body {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+    }
+
+    /* 移动端大纲栏透明 */
+    .VPLocalNav {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+    }
+
+}
+
+
+.VPHero.has-image.VPHomeHero{
+    padding-top: 164px;
+}
+
+/* 首页features部分样式自定义 */
+/* 整体 */
+.VPFeatures.VPHomeFeatures{
+    padding-top: 20px;
+}
+
+.VPFeatures.VPHomeFeatures .container .items .item.grid-3 .VPLink.no-icon.VPFeature {
+    background: linear-gradient(to bottom, #00dfb4, #c8d6ef);
+    border: 0px;
+    border-radius: 40px 2px 40px 2px;
+}

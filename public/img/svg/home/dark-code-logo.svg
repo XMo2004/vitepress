@@ -1,0 +1,13 @@
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左侧尖括号 < -->
+  <path d="M35 30L10 60L35 90" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- 右侧尖括号 > -->
+  <path d="M85 30L110 60L85 90" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- 中间斜杠符号 -->
+  <g transform="translate(60, 60)">
+    <!-- 斜杠 / -->
+    <path d="M-15 25L15 -25" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

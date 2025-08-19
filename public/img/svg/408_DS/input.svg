@@ -1,0 +1,16 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-purple" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#7c3aed"/>
+    </marker>
+  </defs>
+  <rect x="5" y="8" width="6" height="6" fill="#7c3aed" rx="1"/>
+  <rect x="5" y="16" width="6" height="6" fill="#7c3aed" rx="1"/>
+  <rect x="5" y="24" width="6" height="6" fill="#7c3aed" rx="1"/>
+  <path d="M11 11 L22 19" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow-purple)"/>
+  <path d="M11 19 L22 19" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow-purple)"/>
+  <path d="M11 27 L22 19" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow-purple)"/>
+  <rect x="24" y="16" width="10" height="6" fill="none" stroke="#7c3aed" stroke-width="2" rx="1"/>
+  <text x="29" y="20" text-anchor="middle" fill="#7c3aed" font-size="4" font-weight="bold">算法</text>
+  <text x="8" y="38" text-anchor="middle" fill="#7c3aed" font-size="4" font-weight="bold">≥0个输入</text>
+</svg>

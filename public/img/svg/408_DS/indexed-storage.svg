@@ -1,0 +1,22 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- 索引表 -->
+  <rect x="2" y="8" width="12" height="24" fill="none" stroke="#92400e" stroke-width="1" rx="1"/>
+  <rect x="3" y="10" width="10" height="4" fill="#a16207" rx="0.5"/>
+  <rect x="3" y="16" width="10" height="4" fill="#a16207" rx="0.5"/>
+  <rect x="3" y="22" width="10" height="4" fill="#a16207" rx="0.5"/>
+  <rect x="3" y="28" width="10" height="4" fill="#a16207" rx="0.5"/>
+  <!-- 数据区 -->
+  <rect x="20" y="10" width="6" height="6" fill="#92400e" rx="1"/>
+  <rect x="28" y="16" width="6" height="6" fill="#92400e" rx="1"/>
+  <rect x="24" y="22" width="6" height="6" fill="#92400e" rx="1"/>
+  <rect x="32" y="28" width="6" height="6" fill="#92400e" rx="1"/>
+  <!-- 指向线 -->
+  <path d="M13 12 L20 13" stroke="#92400e" stroke-width="1" stroke-dasharray="1,1"/>
+  <path d="M13 18 L28 19" stroke="#92400e" stroke-width="1" stroke-dasharray="1,1"/>
+  <path d="M13 24 L24 25" stroke="#92400e" stroke-width="1" stroke-dasharray="1,1"/>
+  <path d="M13 30 L32 31" stroke="#92400e" stroke-width="1" stroke-dasharray="1,1"/>
+  <text x="8" y="13" text-anchor="middle" fill="white" font-size="3" font-weight="bold">K1</text>
+  <text x="8" y="19" text-anchor="middle" fill="white" font-size="3" font-weight="bold">K2</text>
+  <text x="8" y="25" text-anchor="middle" fill="white" font-size="3" font-weight="bold">K3</text>
+  <text x="8" y="31" text-anchor="middle" fill="white" font-size="3" font-weight="bold">K4</text>
+</svg>

@@ -1,0 +1,94 @@
+/* .vitepress\theme\style\hidden.css */
+/* 隐藏页面中各种影响视觉的横条 */
+
+:root {
+
+    /* 文档页Logo出文字下横条 */
+    @media (min-width: 960px) {
+        .VPNavBarTitle.has-sidebar .title {
+            border-bottom-color: transparent;
+        }
+    }
+
+    /* 页脚横条隐藏 */
+    .VPFooter {
+        border-top: none;
+    }
+
+    /* 手机端菜单栏顶部横条隐藏 */
+    .VPNavBar.screen-open {
+        border-bottom: none;
+    }
+
+    /* 手机端菜单栏菜单分割线隐藏 */
+    .VPNavScreenMenuLink {
+        border-bottom: none;
+    }
+
+    /* 手机端菜单组隐藏 */
+    .VPNavScreenMenuGroup {
+        border-bottom: none;
+    }
+
+    /* 手机端大纲栏横条隐藏 */
+    .VPLocalNav {
+        border-bottom: none;
+    }
+
+}
+
+/* 导航栏下划线隐藏 */
+.divider {
+    display: none;
+}
+
+/* 二级标题上方内边距横线隐藏 */
+h2 {
+    border-top: none;
+    padding-top: 0;
+}
+
+.vp-doc h2 {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* 隐藏标题前面的锚点链接 */
+h1 .header-anchor,
+h2 .header-anchor,
+h3 .header-anchor,
+h4 .header-anchor,
+h5 .header-anchor,
+h6 .header-anchor {
+    display: none;
+}
+
+.vp-doc h1 .header-anchor,
+.vp-doc h2 .header-anchor,
+.vp-doc h3 .header-anchor,
+.vp-doc h4 .header-anchor,
+.vp-doc h5 .header-anchor,
+.vp-doc h6 .header-anchor {
+    display: none;
+}
+
+.xuxianfg {
+    margin-top: 30px;
+    height:1px;
+    background:repeating-linear-gradient(90deg, #888, #888 4px, transparent 4px, transparent 8px)
+}
+
+
+.VPDocAsideOutline .outline-link[href*="#hidden-"] {
+  display: none;
+}
+
+/* 全局隐藏滚动条 */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}

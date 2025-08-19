@@ -1,0 +1,15 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-blue" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#1d4ed8"/>
+    </marker>
+  </defs>
+  <rect x="5" y="8" width="8" height="6" fill="#1d4ed8" rx="1"/>
+  <rect x="5" y="16" width="8" height="6" fill="#1d4ed8" rx="1"/>
+  <rect x="5" y="24" width="8" height="6" fill="#1d4ed8" rx="1"/>
+  <path d="M13 11 L25 19" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <path d="M13 19 L25 19" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <path d="M13 27 L25 19" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <rect x="27" y="16" width="8" height="6" fill="#1d4ed8" rx="1"/>
+  <text x="31" y="20" text-anchor="middle" fill="white" font-size="4" font-weight="bold">唯一</text>
+</svg>

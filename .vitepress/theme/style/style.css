@@ -1,0 +1,202 @@
+:root {
+  --vp-c-brand-1: #8b5cf6;
+  --vp-c-brand-2: #a78bfa;
+  --vp-c-brand-3: #c4b5fd;
+}
+
+.dark {
+  --vp-c-brand-1: #a78bfa;
+  --vp-c-brand-2: #8b5cf6;
+  --vp-c-brand-3: #7c3aed;
+}
+
+@keyframes rainbow-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rainbow-logo {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+:root {
+  /* hero标题渐变色 - 柔和彩虹动态渐变 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    45deg,
+    #d896f0,
+    #96c4f0,
+    #96f0d8,
+    #f0d896,
+    #f096c4,
+    #c496f0,
+    #d896f0
+  );
+  
+  /*hero logo背景渐变色 - 柔和彩虹动态渐变 */
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #d896f0,
+    #96c4f0,
+    #96f0d8,
+    #f0d896,
+    #f096c4,
+    #c496f0
+  );
+  --vp-home-hero-image-filter: blur(40px);
+}
+
+/* 应用动画到hero标题 */
+.VPHero .name {
+  background: var(--vp-home-hero-name-background);
+  background-size: 400% 400%;
+  animation: rainbow-gradient 8s ease-in-out infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* 应用动画到hero logo背景 */
+.VPHero .image-bg {
+  background: var(--vp-home-hero-image-background-image);
+  background-size: 400% 400%;
+  animation: rainbow-logo 12s ease-in-out infinite;
+}
+
+/* 也可自行单独修改brand按钮 */
+/* :root {
+  --vp-button-brand-border: #F6CEEC;
+  --vp-button-brand-text: #F6CEEC;
+  --vp-button-brand-bg: #D939CD;
+
+  --vp-button-brand-hover-border: #F6CEEC;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #D939CD;
+
+  --vp-button-brand-active-border: #F6CEEC;
+} */
+
+/* 全页面背景光线效果 */
+.fullpage-background-rays {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+}
+
+/* 容器块圆角 */
+.custom-block {
+  padding: 30px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+/* 提示块背景 */
+.tip.custom-block {
+  background-color: #60b0ff2c;
+}
+
+.custom-block-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 代码块仿 Mac 风格 */
+.vp-doc div[class*=language-]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  background-color: #ff5f56;
+  border-radius: 50%;
+  box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
+  z-index: 1;
+}
+
+/* 代码块 */
+.vp-doc div[class*=language-]{
+  padding-top: 20px;
+  border-radius: 25px;
+}
+
+/* 代码块语言标签位置调整 */
+.vp-doc div[class*=language-] .lang {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+/* 代码块：下移行号 隐藏右侧竖线 */
+.vp-doc .line-numbers-wrapper {
+  padding-top: 40px;
+  border-right: none;
+}
+
+/* 代码块：重建行号右侧竖线 */
+.vp-doc .line-numbers-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 0;
+  border-right: 1px solid var(--vp-code-block-divider-color);
+  height: calc(100% - 60px);
+}
+
+.vp-doc div[class*='language-'].line-numbers-mode {
+  margin-bottom: 20px;
+}
+
+/* 设置details容器 */
+.details.custom-block {
+    background-color: #ffec602c;
+    border-radius: 25px;
+}
+
+.details.custom-block summary {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.details.custom-block summary {
+  list-style: none;
+}
+
+.details.custom-block summary::before {
+  content: '▶';
+  margin-right: 8px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.details.custom-block[open] summary::before {
+  transform: rotate(90deg);
+}

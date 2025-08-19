@@ -1,0 +1,14 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 文件夹闭合状态 - 科技感配色 -->
+  <defs>
+    <linearGradient id="folderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E293B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M2 3.5C2 2.67157 2.67157 2 3.5 2H6.08579C6.351 2 6.60536 2.10536 6.79289 2.29289L8.20711 3.70711C8.39464 3.89464 8.649 4 8.91421 4H12.5C13.3284 4 14 4.67157 14 5.5V12.5C14 13.3284 13.3284 14 12.5 14H3.5C2.67157 14 2 13.3284 2 12.5V3.5Z" fill="url(#folderGrad)" stroke="#00D9FF" stroke-width="0.8"/>
+  <!-- 文件夹标签 -->
+  <path d="M6.08579 2H8.20711L8.91421 4H6.79289L6.08579 2Z" fill="#0EA5E9" stroke="#00D9FF" stroke-width="0.5"/>
+  <!-- 科技感光效 -->
+  <rect x="3" y="6" width="10" height="1" fill="#00D9FF" opacity="0.6" rx="0.5"/>
+</svg>

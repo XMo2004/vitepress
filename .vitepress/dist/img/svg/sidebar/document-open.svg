@@ -1,0 +1,21 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 文件夹展开状态 - 科技感配色 -->
+  <defs>
+    <linearGradient id="openFolderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F172A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E293B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="contentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  <path d="M2 3.5C2 2.67157 2.67157 2 3.5 2H6.08579C6.351 2 6.60536 2.10536 6.79289 2.29289L8.20711 3.70711C8.39464 3.89464 8.649 4 8.91421 4H12.5C13.3284 4 14 4.67157 14 5.5V6H3C2.44772 6 2 6.44772 2 7V12.5C2 13.3284 2.67157 14 3.5 14H12.5C13.3284 14 14 13.3284 14 12.5V7C14 6.44772 13.5523 6 13 6H3V3.5Z" fill="url(#openFolderGrad)" stroke="#06B6D4" stroke-width="0.8"/>
+  <!-- 文件夹标签 -->
+  <path d="M6.08579 2H8.20711L8.91421 4H6.79289L6.08579 2Z" fill="#0891B2" stroke="#06B6D4" stroke-width="0.5"/>
+  <!-- 展开内容区域 -->
+  <path d="M3 7H13C13.5523 7 14 7.44772 14 8V12.5C14 13.3284 13.3284 14 12.5 14H3.5C2.67157 14 2 13.3284 2 12.5V8C2 7.44772 2.44772 7 3 7Z" fill="url(#contentGrad)" stroke="#06B6D4" stroke-width="0.5"/>
+  <!-- 科技感光效线条 -->
+  <rect x="4" y="9" width="8" height="0.5" fill="#00F5FF" opacity="0.8" rx="0.25"/>
+  <rect x="4" y="11" width="6" height="0.5" fill="#00F5FF" opacity="0.6" rx="0.25"/>
+</svg>

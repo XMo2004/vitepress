@@ -1,0 +1,8 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="12" width="24" height="16" fill="none" stroke="#8b5cf6" stroke-width="2" rx="2"/>
+  <rect x="10" y="14" width="20" height="3" fill="#8b5cf6" rx="1"/>
+  <rect x="10" y="19" width="15" height="3" fill="#8b5cf6" rx="1"/>
+  <rect x="10" y="24" width="10" height="3" fill="#8b5cf6" rx="1"/>
+  <path d="M15 8 L20 12 L25 8" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+  <text x="20" y="36" text-anchor="middle" fill="#8b5cf6" font-size="5" font-weight="bold">省存储</text>
+</svg>

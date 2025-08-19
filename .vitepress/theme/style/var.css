@@ -1,0 +1,25 @@
+/* var.css */
+
+/* 全局禁用文本选择和复制 */
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 禁用右键菜单和复制快捷键 */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 隐藏链接下划线 */
+.vp-doc a {
+    text-decoration: none;
+}
+

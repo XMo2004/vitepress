@@ -1,0 +1,16 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-green-small" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#22c55e"/>
+    </marker>
+  </defs>
+  <rect x="8" y="8" width="32" height="32" fill="none" stroke="#22c55e" stroke-width="2" rx="4"/>
+  <rect x="12" y="16" width="6" height="6" fill="#22c55e" rx="1"/>
+  <rect x="21" y="16" width="6" height="6" fill="#22c55e" rx="1"/>
+  <rect x="30" y="16" width="6" height="6" fill="#22c55e" rx="1"/>
+  <path d="M18 19 L21 19" stroke="#22c55e" stroke-width="1" marker-end="url(#arrow-green-small)"/>
+  <path d="M27 19 L30 19" stroke="#22c55e" stroke-width="1" marker-end="url(#arrow-green-small)"/>
+  <rect x="12" y="26" width="24" height="2" fill="#22c55e" rx="1"/>
+  <rect x="12" y="30" width="20" height="2" fill="#22c55e" rx="1"/>
+  <rect x="12" y="34" width="16" height="2" fill="#22c55e" rx="1"/>
+</svg>

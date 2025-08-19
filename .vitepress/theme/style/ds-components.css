@@ -1,0 +1,1690 @@
+/* ds-components.css */
+/* 408数据结构文档中可复用的组件样式 */
+
+/* 蓝色文本样式 */
+.blue {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.blue-b {
+  color: #1e40af;
+  font-weight: 600;
+}
+
+/* 分割线样式 */
+.xuxianfg {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+  margin: 2rem 0;
+}
+
+/* 卡片容器样式 */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.card-grid-large {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* 基础卡片样式 */
+.card-base {
+  border-radius: 25px;
+  padding: 1.5rem;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 数据记录卡片样式 */
+.record-card {
+  background: var(--vp-c-bg-soft, white);
+  border: 2px solid #60a5fa;
+  border-radius: 25px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(96, 165, 250, 0.1);
+  min-width: 200px;
+}
+
+.record-card.student {
+  border-color: #60a5fa;
+}
+
+.record-card.book {
+  border-color: #10b981;
+}
+
+.record-card.product {
+  border-color: #f59e0b;
+}
+
+.record-card-title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.record-card-title.student {
+  color: #3b82f6;
+}
+
+.record-card-title.book {
+  color: #10b981;
+}
+
+.record-card-title.product {
+  color: #f59e0b;
+}
+
+.record-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.3rem 0;
+  padding: 0.2rem 0.5rem;
+  background: var(--vp-c-bg-alt, #f1f5f9);
+  border-radius: 4px;
+}
+
+.record-item-label {
+  color: var(--vp-c-text-2, #64748b);
+}
+
+.record-item-value {
+  font-weight: 500;
+}
+
+.record-item-value.student {
+  color: #3b82f6;
+}
+
+.record-item-value.book {
+  color: #10b981;
+}
+
+.record-item-value.product {
+  color: #f59e0b;
+}
+
+.record-card-note {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* 数据类型卡片样式 */
+.type-card {
+  border-radius: 25px;
+  padding: 1rem;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.type-card.atomic {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.type-card.structure {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.type-card.abstract {
+  background: linear-gradient(135deg, #fefbeb 0%, #fef3c7 100%);
+}
+
+.type-card-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+.type-card-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.type-card-title.atomic {
+  color: #dc2626;
+}
+
+.type-card-title.structure {
+  color: #16a34a;
+}
+
+.type-card-title.abstract {
+  color: #d97706;
+}
+
+.type-card-desc {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.type-card-desc.atomic {
+  color: #7f1d1d;
+}
+
+.type-card-desc.structure {
+  color: #14532d;
+}
+
+.type-card-desc.abstract {
+  color: #92400e;
+}
+
+.type-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.type-card-tag {
+  background: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.type-card-tag.atomic {
+  color: #dc2626;
+}
+
+.type-card-tag.structure {
+  color: #16a34a;
+}
+
+.type-card-tag.abstract {
+  color: #d97706;
+}
+
+/* 逻辑结构卡片样式 */
+.logic-structure-card {
+  border-radius: 25px;
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
+}
+
+.logic-structure-card.set {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.logic-structure-card.linear {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+}
+
+.logic-structure-card.tree {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.logic-structure-card.graph {
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+}
+
+.logic-structure-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.logic-structure-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.logic-structure-title.set {
+  color: #1d4ed8;
+}
+
+.logic-structure-title.linear {
+  color: #15803d;
+}
+
+.logic-structure-title.tree {
+  color: #b45309;
+}
+
+.logic-structure-title.graph {
+  color: #be185d;
+}
+
+.logic-structure-desc {
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.logic-structure-desc.set {
+  color: #1e40af;
+}
+
+.logic-structure-desc.linear {
+  color: #166534;
+}
+
+.logic-structure-desc.tree {
+  color: #92400e;
+}
+
+.logic-structure-desc.graph {
+  color: #9d174d;
+}
+
+.logic-structure-tag {
+  background: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.logic-structure-tag.set {
+  color: #1d4ed8;
+}
+
+.logic-structure-tag.linear {
+  color: #15803d;
+}
+
+.logic-structure-tag.tree {
+  color: #b45309;
+}
+
+.logic-structure-tag.graph {
+  color: #be185d;
+}
+
+/* 图标容器样式 */
+.icon-container {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 存储结构卡片样式 */
+.storage-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 25px;
+  padding: 2rem;
+  width: 100%;
+}
+
+.storage-card-icon {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto;
+}
+
+.storage-card-title {
+  text-align: center;
+  font-weight: 600;
+  color: #475569;
+  font-size: 1.1rem;
+}
+
+.storage-card-desc {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* 数据运算卡片样式 */
+.operation-card {
+  background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 100%);
+  border-radius: 25px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.operation-card-icon {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto;
+}
+
+.operation-card-title {
+  text-align: center;
+  font-weight: 600;
+  color: #92400e;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.operation-card-desc {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #a16207;
+}
+
+.operation-items {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.operation-item {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.operation-item-title {
+  font-weight: 500;
+  color: #92400e;
+  margin-bottom: 0.25rem;
+}
+
+.operation-item-desc {
+  font-size: 0.8rem;
+  color: #a16207;
+}
+
+/* 算法卡片样式 */
+.algorithm-card {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 25px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.algorithm-card-icon {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto;
+}
+
+.algorithm-card-title {
+  text-align: center;
+  font-weight: 600;
+  color: #0369a1;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.algorithm-card-desc {
+  text-align: center;
+  font-size: 1rem;
+  color: #0284c7;
+  line-height: 1.6;
+}
+
+.algorithm-features {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.algorithm-features-title {
+  text-align: center;
+  font-weight: 500;
+  color: #0369a1;
+  margin-bottom: 0.8rem;
+}
+
+.algorithm-feature-tags {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.algorithm-feature-tag {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* 算法五大特性样式 */
+.algorithm-properties-card {
+  background: linear-gradient(135deg, #fef7ff 0%, #f3e8ff 100%);
+  border-radius: 25px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.algorithm-properties-title {
+  text-align: center;
+  font-weight: 600;
+  color: #7c3aed;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.algorithm-properties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.algorithm-property {
+  border-radius: 25px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.algorithm-property.finiteness {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.algorithm-property.definiteness {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+}
+
+.algorithm-property.feasibility {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.algorithm-property.input {
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+}
+
+.algorithm-property.output {
+  background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+}
+
+.property-number {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.algorithm-property.finiteness .property-number {
+  color: #1d4ed8;
+}
+
+.algorithm-property.definiteness .property-number {
+  color: #15803d;
+}
+
+.algorithm-property.feasibility .property-number {
+  color: #b45309;
+}
+
+.algorithm-property.input .property-number {
+  color: #be185d;
+}
+
+.algorithm-property.output .property-number {
+  color: #7c3aed;
+}
+
+.property-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.property-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.8rem;
+}
+
+.property-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.algorithm-property.finiteness .property-title {
+  color: #1d4ed8;
+}
+
+.algorithm-property.definiteness .property-title {
+  color: #15803d;
+}
+
+.algorithm-property.feasibility .property-title {
+  color: #b45309;
+}
+
+.algorithm-property.input .property-title {
+  color: #be185d;
+}
+
+.algorithm-property.output .property-title {
+  color: #7c3aed;
+}
+
+.property-subtitle {
+  font-size: 0.8rem;
+}
+
+.algorithm-property.finiteness .property-subtitle {
+  color: #1d4ed8;
+}
+
+.algorithm-property.definiteness .property-subtitle {
+  color: #15803d;
+}
+
+.algorithm-property.feasibility .property-subtitle {
+  color: #b45309;
+}
+
+.algorithm-property.input .property-subtitle {
+  color: #be185d;
+}
+
+.algorithm-property.output .property-subtitle {
+  color: #7c3aed;
+}
+
+.property-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.algorithm-property.finiteness .property-description {
+  color: #1e40af;
+}
+
+.algorithm-property.definiteness .property-description {
+  color: #166534;
+}
+
+.algorithm-property.feasibility .property-description {
+  color: #92400e;
+}
+
+.algorithm-property.input .property-description {
+  color: #9d174d;
+}
+
+.algorithm-property.output .property-description {
+  color: #6b21a8;
+}
+
+.property-description .highlight {
+  font-weight: 600;
+}
+
+/* 算法设计目标样式 */
+.algorithm-goals-card {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-radius: 25px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.algorithm-goals-title {
+  text-align: center;
+  font-weight: 600;
+  color: #15803d;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.algorithm-goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.algorithm-goal {
+  border-radius: 25px;
+  padding: 1.5rem;
+}
+
+.algorithm-goal.correctness {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+}
+
+.algorithm-goal.readability {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.algorithm-goal.robustness {
+  background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
+}
+
+.algorithm-goal.efficiency {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.goal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.goal-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.8rem;
+}
+
+.goal-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.algorithm-goal.correctness .goal-title {
+  color: #047857;
+}
+
+.algorithm-goal.readability .goal-title {
+  color: #1d4ed8;
+}
+
+.algorithm-goal.robustness .goal-title {
+  color: #b45309;
+}
+
+.algorithm-goal.efficiency .goal-title {
+  color: #15803d;
+}
+
+.goal-subtitle {
+  font-size: 0.8rem;
+}
+
+.algorithm-goal.correctness .goal-subtitle {
+  color: #047857;
+}
+
+.algorithm-goal.readability .goal-subtitle {
+  color: #1d4ed8;
+}
+
+.algorithm-goal.robustness .goal-subtitle {
+  color: #b45309;
+}
+
+.algorithm-goal.efficiency .goal-subtitle {
+  color: #15803d;
+}
+
+.goal-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.algorithm-goal.correctness .goal-description {
+  color: #065f46;
+}
+
+.algorithm-goal.readability .goal-description {
+  color: #1e40af;
+}
+
+.algorithm-goal.robustness .goal-description {
+  color: #92400e;
+}
+
+.algorithm-goal.efficiency .goal-description {
+  color: #166534;
+}
+
+.goal-description .highlight {
+  font-weight: 600;
+}
+
+.algorithm-goal.correctness .goal-description .highlight {
+  color: #047857;
+}
+
+.algorithm-goal.readability .goal-description .highlight {
+  color: #1d4ed8;
+}
+
+.algorithm-goal.robustness .goal-description .highlight {
+  color: #b45309;
+}
+
+.algorithm-goal.efficiency .goal-description .highlight {
+  color: #15803d;
+}
+
+.goal-tip {
+  background: white;
+  padding: 0.8rem;
+  border-radius: 12px;
+}
+
+.algorithm-goal.correctness .goal-tip {
+  border-left: 4px solid #10b981;
+}
+
+.algorithm-goal.readability .goal-tip {
+  border-left: 4px solid #2563eb;
+}
+
+.algorithm-goal.robustness .goal-tip {
+  border-left: 4px solid #d97706;
+}
+
+.algorithm-goal.efficiency .goal-tip {
+  border-left: 4px solid #16a34a;
+}
+
+.tip-text {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.algorithm-goal.correctness .tip-text {
+  color: #047857;
+}
+
+.algorithm-goal.readability .tip-text {
+  color: #1d4ed8;
+}
+
+.algorithm-goal.robustness .tip-text {
+  color: #b45309;
+}
+
+.algorithm-goal.efficiency .tip-text {
+  color: #15803d;
+}
+
+/* 算法质量评估总结样式 */
+.algorithm-quality-summary {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 25px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.quality-icon-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.quality-icon {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.quality-formula {
+  font-weight: 600;
+  color: #475569;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.quality-description {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* 运算容器样式 */
+.operation-container {
+  border-radius: 25px;
+  padding: 2rem;
+  max-width: 700px;
+}
+
+.operation-types {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.operation-type {
+  text-align: center;
+}
+
+.operation-type-card {
+  border-radius: 25px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.operation-type-card.definition {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.operation-type-card.implementation {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.operation-type-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+.operation-type-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.operation-type-title.definition {
+  color: #3b82f6;
+}
+
+.operation-type-title.implementation {
+  color: #22c55e;
+}
+
+.operation-type-subtitle {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.operation-type-subtitle.definition {
+  color: #1e40af;
+}
+
+.operation-type-subtitle.implementation {
+  color: #16a34a;
+}
+
+.operation-type-desc {
+  font-size: 0.9rem;
+  color: #475569;
+  text-align: center;
+}
+
+.operation-list {
+  border-top: 1px solid #cbd5e1;
+  padding-top: 1.5rem;
+}
+
+.operation-list-title {
+  text-align: center;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.operation-tags {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.operation-tag {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  min-width: 80px;
+}
+
+.operation-tag.insert {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.operation-tag.delete {
+  background: #fecaca;
+  color: #dc2626;
+}
+
+.operation-tag.search {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.operation-tag.update {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.operation-tag.traverse {
+  background: #fce7f3;
+  color: #db2777;
+}
+
+.operation-tag.sort {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+
+/* 存储方式详细卡片 */
+.storage-detail-card {
+  border-radius: 25px;
+  padding: 1.5rem;
+}
+
+.storage-detail-card.sequential {
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+}
+
+.storage-detail-card.linked {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+}
+
+.storage-detail-card.indexed {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.storage-detail-card.hash {
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+}
+
+.storage-detail-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.storage-detail-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.8rem;
+}
+
+.storage-detail-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.storage-detail-title.sequential {
+  color: #0c4a6e;
+}
+
+.storage-detail-title.linked {
+  color: #14532d;
+}
+
+.storage-detail-title.indexed {
+  color: #92400e;
+}
+
+.storage-detail-title.hash {
+  color: #9d174d;
+}
+
+.storage-detail-subtitle {
+  font-size: 0.8rem;
+}
+
+.storage-detail-subtitle.sequential {
+  color: #0c4a6e;
+}
+
+.storage-detail-subtitle.linked {
+  color: #14532d;
+}
+
+.storage-detail-subtitle.indexed {
+  color: #92400e;
+}
+
+.storage-detail-subtitle.hash {
+  color: #9d174d;
+}
+
+.storage-detail-desc {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.storage-detail-desc.sequential {
+  color: #0c4a6e;
+}
+
+.storage-detail-desc.linked {
+  color: #14532d;
+}
+
+.storage-detail-desc.indexed {
+  color: #92400e;
+}
+
+.storage-detail-desc.hash {
+  color: #9d174d;
+}
+
+/* 优缺点标签 */
+.pros-cons-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.pros-tag {
+  background: #dcfce7;
+  color: #16a34a;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.cons-tag {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* 算法特性卡片 */
+.algorithm-feature-card {
+  border-radius: 25px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.algorithm-feature-card.finiteness {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.algorithm-feature-card.determinism {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+}
+
+.algorithm-feature-card.feasibility {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.algorithm-feature-card.input {
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+}
+
+.algorithm-feature-card.output {
+  background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+}
+
+.feature-number {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.feature-number.finiteness {
+  color: #1d4ed8;
+}
+
+.feature-number.determinism {
+  color: #15803d;
+}
+
+.feature-number.feasibility {
+  color: #b45309;
+}
+
+.feature-number.input {
+  color: #be185d;
+}
+
+.feature-number.output {
+  color: #7c3aed;
+}
+
+.feature-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.8rem;
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.feature-title.finiteness {
+  color: #1d4ed8;
+}
+
+.feature-title.determinism {
+  color: #15803d;
+}
+
+.feature-title.feasibility {
+  color: #b45309;
+}
+
+.feature-title.input {
+  color: #be185d;
+}
+
+.feature-title.output {
+  color: #7c3aed;
+}
+
+.feature-subtitle {
+  font-size: 0.8rem;
+}
+
+.feature-subtitle.finiteness {
+  color: #1d4ed8;
+}
+
+.feature-subtitle.determinism {
+  color: #15803d;
+}
+
+.feature-subtitle.feasibility {
+  color: #b45309;
+}
+
+.feature-subtitle.input {
+  color: #be185d;
+}
+
+.feature-subtitle.output {
+  color: #7c3aed;
+}
+
+.feature-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.feature-desc.finiteness {
+  color: #1e40af;
+}
+
+.feature-desc.determinism {
+  color: #166534;
+}
+
+.feature-desc.feasibility {
+  color: #92400e;
+}
+
+.feature-desc.input {
+  color: #9d174d;
+}
+
+.feature-desc.output {
+  color: #6b21a8;
+}
+
+/* 算法设计目标卡片 */
+.algorithm-goal-card {
+  border-radius: 25px;
+  padding: 1.5rem;
+}
+
+.algorithm-goal-card.correctness {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border: 2px solid #10b981;
+}
+
+.algorithm-goal-card.readability {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.algorithm-goal-card.robustness {
+  background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
+}
+
+.algorithm-goal-card.efficiency {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.goal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.goal-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.8rem;
+}
+
+.goal-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.goal-title.correctness {
+  color: #047857;
+}
+
+.goal-title.readability {
+  color: #1d4ed8;
+}
+
+.goal-title.robustness {
+  color: #b45309;
+}
+
+.goal-title.efficiency {
+  color: #15803d;
+}
+
+.goal-subtitle {
+  font-size: 0.8rem;
+}
+
+.goal-subtitle.correctness {
+  color: #047857;
+}
+
+.goal-subtitle.readability {
+  color: #1d4ed8;
+}
+
+.goal-subtitle.robustness {
+  color: #b45309;
+}
+
+.goal-subtitle.efficiency {
+  color: #15803d;
+}
+
+.goal-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.goal-desc.correctness {
+  color: #065f46;
+}
+
+.goal-desc.readability {
+  color: #1e40af;
+}
+
+.goal-desc.robustness {
+  color: #92400e;
+}
+
+.goal-desc.efficiency {
+  color: #166534;
+}
+
+.goal-note {
+  background: white;
+  padding: 0.8rem;
+  border-radius: 12px;
+  border-left: 4px solid;
+}
+
+.goal-note.correctness {
+  border-left-color: #10b981;
+}
+
+.goal-note.readability {
+  border-left-color: #2563eb;
+}
+
+.goal-note.robustness {
+  border-left-color: #d97706;
+}
+
+.goal-note.efficiency {
+  border-left-color: #16a34a;
+}
+
+.goal-note-text {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.goal-note-text.correctness {
+  color: #047857;
+}
+
+.goal-note-text.readability {
+  color: #1d4ed8;
+}
+
+.goal-note-text.robustness {
+  color: #b45309;
+}
+
+.goal-note-text.efficiency {
+  color: #15803d;
+}
+
+/* 算法质量评估总结 */
+.algorithm-summary {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 25px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.algorithm-summary-icon {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.algorithm-summary-title {
+  font-weight: 600;
+  color: #475569;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.algorithm-summary-desc {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* 通用工具类 */
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.min-w-48 {
+  min-width: 12rem;
+}
+
+.min-w-56 {
+  min-width: 14rem;
+}
+
+.min-w-64 {
+  min-width: 16rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .card-grid-large {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .record-card {
+    min-width: auto;
+  }
+  
+  .type-card {
+    min-width: auto;
+  }
+  
+  .logic-structure-card {
+    min-width: auto;
+  }
+  
+  .storage-detail-card {
+    padding: 1rem;
+  }
+  
+  .algorithm-feature-card {
+    padding: 1rem;
+  }
+  
+  .algorithm-goal-card {
+    padding: 1rem;
+  }
+  
+  .storage-card {
+    padding: 1.5rem;
+  }
+  
+  .algorithm-summary {
+    padding: 1.5rem;
+  }
+}
