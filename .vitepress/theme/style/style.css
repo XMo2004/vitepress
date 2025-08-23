@@ -173,6 +173,11 @@
   margin-bottom: 20px;
 }
 
+/* 清零 p 元素的 margin */
+.vp-doc p {
+  margin: 0;
+}
+
 /* 设置details容器 */
 .details.custom-block {
     background-color: #ffec602c;

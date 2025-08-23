@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import MarkdownIt from 'markdown-it'
+import mathjax3 from 'markdown-it-mathjax3'
+
+const md = MarkdownIt().use(mathjax3)
 
 interface Props {
   question: string
@@ -43,12 +47,16 @@ const resetQuiz = () => {
 const getOptionLabel = (index: number) => {
   return String.fromCharCode(65 + index) // A, B, C, D...
 }
+
+const renderMarkdown = (content: string) => {
+  return md.render(content)
+}
 </script>
 
 <template>
   <div class="quiz-choice">
     <!-- 题目 -->
-    <div class="question" v-html="props.question"></div>
+    <div class="question" v-html="renderMarkdown(props.question)"></div>
     
     <!-- 选项 -->
     <div class="options">
@@ -65,7 +73,7 @@ const getOptionLabel = (index: number) => {
         @click="selectOption(index)"
       >
         <span class="option-label">{{ getOptionLabel(index) }}.</span>
-        <span class="option-text" v-html="option"></span>
+        <span class="option-text" v-html="renderMarkdown(option)"></span>
       </div>
     </div>
     
@@ -85,12 +93,13 @@ const getOptionLabel = (index: number) => {
         <span class="icon">💡</span>
         <span class="title">解析</span>
       </div>
-      <div class="explanation-content" v-html="props.explanation"></div>
+      <div class="explanation-content" v-html="renderMarkdown(props.explanation)"></div>
     </div>
   </div>
 </template>
 
 <style scoped>
+
 .quiz-choice {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -108,6 +117,7 @@ const getOptionLabel = (index: number) => {
   margin-bottom: 16px;
   line-height: 1.5;
   color: var(--vp-c-text-1);
+  margin-top: 2px;
 }
 
 .options {
@@ -116,7 +126,7 @@ const getOptionLabel = (index: number) => {
 
 .option {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   width: auto;
   padding: 6px 16px;
   margin-bottom: 4px;
@@ -160,8 +170,6 @@ const getOptionLabel = (index: number) => {
 
 .option-text {
   flex: 1;
-  line-height: 1.5;
-  color: var(--vp-c-text-1);
 }
 
 .result {

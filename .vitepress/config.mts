@@ -73,10 +73,10 @@ export default defineConfig({
       },
       { text: '408笔记',
         items: [
-          { text: '数据结构', link: '/408_DS/01/408_DS_0' },
-          { text: '计算机组成原理', link: '/408_CP/01/408_CP_0' },
-          { text: '操作系统', link: '/408_OS/01/408_OS_0' },
-          { text: '计算机网络', link: '/408_CN/01/408_CN_0' },
+          { text: '数据结构', link: '/post/408/408_DS/01/408_DS_0' },
+          { text: '计算机组成原理', link: '/post/408/408_CP/01/408_CP_0' },
+          { text: '操作系统', link: '/post/408/408_OS/01/408_OS_0' },
+          { text: '计算机网络', link: '/post/408/408_CN/01/408_CN_0' },
         ]
       },
       {
@@ -479,7 +479,7 @@ export default defineConfig({
           ]
         }
       ],
-      '/408_DS/': [
+      '/post/408/408_DS/': [
         {
           text: '第一章 绪论',
           collapsed: true,
@@ -488,19 +488,19 @@ export default defineConfig({
               text: '数据结构的基本概念',
               collapsed: true,
               items: [
-                { text: '00 综述', link: '/408_DS/01/408_DS_0' },
-                { text: '01 基本概念和术语', link: '/408_DS/01/408_DS_1' },
-                { text: '02 数据结构三要素', link: '/408_DS/01/408_DS_2' },
-                { text: '习题', link: '/408_DS/01/408_DS_3' },
+                { text: '00 综述', link: '/post/408/408_DS/01/408_DS_0' },
+                { text: '01 基本概念和术语', link: '/post/408/408_DS/01/408_DS_1' },
+                { text: '02 数据结构三要素', link: '/post/408/408_DS/01/408_DS_2' },
+                { text: '习题', link: '/post/408/408_DS/01/408_DS_3' },
               ]
             },
             {
               text: '算法和算法评价',
               collapsed: true,
               items: [
-                { text: '01 算法的基本概念', link: '/408_DS/01/408_DS_4' },
-                { text: '02 算法效率的度量', link: '/408_DS/01/408_DS_5' },
-                { text: '习题', link: '/408_DS/01/408_DS_6' },
+                { text: '01 算法的基本概念', link: '/post/408/408_DS/01/408_DS_4' },
+                { text: '02 算法效率的度量', link: '/post/408/408_DS/01/408_DS_5' },
+                { text: '习题', link: '/post/408/408_DS/01/408_DS_6' },
               ]
             } 
           ]
@@ -513,32 +513,32 @@ export default defineConfig({
               text: '线性表定义和基本操作',
               collapsed: true,
               items: [
-                { text: '00 综述', link: '/408_DS/02/408_DS_1' },
-                { text: '01 线性表的定义', link: '/408_DS/02/408_DS_2' },
-                { text: '02 线性表的基本操作', link: '/408_DS/02/408_DS_3' },
-                { text: '习题', link: '/408_DS/02/408_DS_4' },
+                { text: '00 综述', link: '/post/408/408_DS/02/408_DS_1' },
+                { text: '01 线性表的定义', link: '/post/408/408_DS/02/408_DS_2' },
+                { text: '02 线性表的基本操作', link: '/post/408/408_DS/02/408_DS_3' },
+                { text: '习题', link: '/post/408/408_DS/02/408_DS_4' },
               ]
             },
             {
               text: '线性表的顺序表示',
               collapsed: true,
               items: [
-                { text: '01 顺序表的定义', link: '/408_DS/02/408_DS_5' },
-                { text: '02 基本操作的实现', link: '/408_DS/02/408_DS_6' },
-                { text: '习题', link: '/408_DS/02/408_DS_7' },
+                { text: '01 顺序表的定义', link: '/post/408/408_DS/02/408_DS_5' },
+                { text: '02 基本操作的实现', link: '/post/408/408_DS/02/408_DS_6' },
+                { text: '习题', link: '/post/408/408_DS/02/408_DS_7' },
               ]
             },
             {
               text: '线性表的链式表示',
               collapsed: true,
               items: [
-                { text: '01 单链表的定义', link: '/408_DS/02/408_DS_8' },
-                { text: '02 单链表的基本操作', link: '/408_DS/02/408_DS_9' },
-                { text: '03 双链表', link: '/408_DS/02/408_DS_10' },
-                { text: '04 循环链表', link: '/408_DS/02/408_DS_11' },
-                { text: '05 静态链表', link: '/408_DS/02/408_DS_12' },
-                { text: '06 顺序表和链表的比较', link: '/408_DS/02/408_DS_13' },
-                { text: '习题', link: '/408_DS/02/408_DS_14' },
+                { text: '01 单链表的定义', link: '/post/408/408_DS/02/408_DS_8' },
+                { text: '02 单链表的基本操作', link: '/post/408/408_DS/02/408_DS_9' },
+                { text: '03 双链表', link: '/post/408/408_DS/02/408_DS_10' },
+                { text: '04 循环链表', link: '/post/408/408_DS/02/408_DS_11' },
+                { text: '05 静态链表', link: '/post/408/408_DS/02/408_DS_12' },
+                { text: '06 顺序表和链表的比较', link: '/post/408/408_DS/02/408_DS_13' },
+                { text: '习题', link: '/post/408/408_DS/02/408_DS_14' },
               ]
             }
           ]
@@ -551,11 +551,11 @@ export default defineConfig({
               text: '栈',
               collapsed: true,
               items: [
-                { text: '00 综述', link: '/408_DS/03/408_DS_1' },
-                { text: '01 栈的基本概念', link: '/408_DS/03/408_DS_2' },
-                { text: '02 栈的顺序存储结构', link: '/408_DS/03/408_DS_3' },
-                { text: '03 栈的链式存储结构', link: '/408_DS/03/408_DS_4' },
-                { text: '习题', link: '/408_DS/03/408_DS_5' },
+                { text: '00 综述', link: '/post/408/408_DS/03/408_DS_1' },
+                { text: '01 栈的基本概念', link: '/post/408/408_DS/03/408_DS_2' },
+                { text: '02 栈的顺序存储结构', link: '/post/408/408_DS/03/408_DS_3' },
+                { text: '03 栈的链式存储结构', link: '/post/408/408_DS/03/408_DS_4' },
+                { text: '习题', link: '/post/408/408_DS/03/408_DS_5' },
               ]
             },
             {
