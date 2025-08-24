@@ -562,11 +562,11 @@ export default defineConfig({
               text: '队列',
               collapsed: true,
               items: [
-                { text: '01 队列的基本概念', link: '/408_DS/03/408_DS_6' },
-                { text: '02 队列的顺序存储结构', link: '/408_DS/03/408_DS_7' },
-                { text: '03 队列的链式存储结构', link: '/408_DS/03/408_DS_8' },
-                { text: '04 双端队列', link: '/408_DS/03/408_DS_9' },
-                { text: '习题', link: '/408_DS/03/408_DS_10' },
+                { text: '01 队列的基本概念', link: '/post/408/408_DS/03/408_DS_6' },
+                { text: '02 队列的顺序存储结构', link: '/post/408/408_DS/03/408_DS_7' },
+                { text: '03 队列的链式存储结构', link: '/post/408/408_DS/03/408_DS_8' },
+                { text: '04 双端队列', link: '/post/408/408_DS/03/408_DS_9' },
+                { text: '习题', link: '/post/408/408_DS/03/408_DS_10' },
               ]
              },
              {
