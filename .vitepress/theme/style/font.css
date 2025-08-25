@@ -1,0 +1,129 @@
+/* 字体加粗 */
+.bold{
+    font-weight: 900; 
+    text-shadow: 0.5px 0 0 currentColor;
+}
+
+/* 楷体字体*/
+.kaiti {
+    font-family: '楷体', KaiTi, STKaiti, SimKai;
+    font-size: 1.1em;
+}
+
+.kaiti-b{
+    font-family: '楷体', KaiTi, STKaiti, SimKai;
+    font-size: 1.1em;
+    font-weight: 900; 
+    text-shadow: 0.5px 0 0 currentColor;
+}
+
+/* 宋体字体*/
+.songti {
+    font-family: '宋体', SimSun, serif;
+    font-size: 1em;
+}
+
+/* 黑体字体*/
+.heiti {
+    font-family: '黑体', SimHei, 'Microsoft YaHei', sans-serif;
+    font-size: 1em;
+}
+
+/* 仿宋字体*/
+.fangsong{
+    font-family: '仿宋', FangSong, STFangsong;
+    font-size: 1.1em;
+}
+
+/* 圆体字体*/
+.yuanti{
+    font-family: '圆体', 'Yuanti SC', 'YouYuan';
+    font-size: 1em;
+}
+
+/* 红色字体 */
+.red {
+    color: rgb(202, 36, 40);
+}
+
+/* 红色加粗字体 */
+.red-bold {
+    color: rgb(202, 36, 40);
+    font-weight: 900;
+}
+
+/* 蓝色字体 */
+.blue-bold{
+    color: #1e40af;
+    font-weight: 900; 
+    text-shadow: 0.5px 0 0 currentColor;
+}
+
+.blue{
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.blue-m{
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.blue-m{
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* 绿色字体 */
+.green {
+    color: rgba(20, 130, 131, 1);
+}
+
+/* 绿色加粗字体 */
+.green-bold {
+    color: rgba(20, 130, 131, 1);
+    font-weight: 900;
+}
+
+/* 谷歌蓝色字体（强调） */
+.google-blue {
+    color: #1E88E5;
+    font-weight:900;
+}
+
+/* 绿色高亮 */
+.green-gl{
+    background-color: rgba(144, 238, 144, 0.25)
+}
+
+/* 红色高亮 */
+.red-gl{
+    background-color: rgba(238, 144, 144, 0.25)
+}
+
+/* 蓝色高亮 */
+.blue-gl {
+    background-color: rgba(173, 216, 230, 0.45)
+}
+
+.green-m{
+    background-color: rgba(20, 130, 131, 0.15);
+    color: rgba(20, 130, 131, 1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.red-m{
+    background-color: rgba(202, 36, 40, 0.15);
+    color: rgba(202, 36, 40, 1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
