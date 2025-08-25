@@ -498,9 +498,9 @@ export default defineConfig({
               text: '算法和算法评价',
               collapsed: true,
               items: [
-                { text: '01 算法的基本概念', link: '/post/408/408_DS/01/408_DS_4' },
-                { text: '02 算法效率的度量', link: '/post/408/408_DS/01/408_DS_5' },
-                { text: '习题', link: '/post/408/408_DS/01/408_DS_6' },
+                { text: '01 算法的基本概念', link: '/post/kaoyan/408/408_DS/01/408_DS_4' },
+                { text: '02 算法效率的度量', link: '/post/kaoyan/408/408_DS/01/408_DS_5' },
+                { text: '习题', link: '/post/kaoyan/408/408_DS/01/408_DS_6' },
               ]
             } 
           ]
@@ -513,32 +513,32 @@ export default defineConfig({
               text: '线性表定义和基本操作',
               collapsed: true,
               items: [
-                { text: '00 综述', link: '/post/408/408_DS/02/408_DS_1' },
-                { text: '01 线性表的定义', link: '/post/408/408_DS/02/408_DS_2' },
-                { text: '02 线性表的基本操作', link: '/post/408/408_DS/02/408_DS_3' },
-                { text: '习题', link: '/post/408/408_DS/02/408_DS_4' },
+                { text: '00 综述', link: '/post/kaoyan/408/408_DS/02/408_DS_1' },
+                { text: '01 线性表的定义', link: '/post/kaoyan/408/408_DS/02/408_DS_2' },
+                { text: '02 线性表的基本操作', link: '/post/kaoyan/408/408_DS/02/408_DS_3' },
+                { text: '习题', link: '/post/kaoyan/408/408_DS/02/408_DS_4' },
               ]
             },
             {
               text: '线性表的顺序表示',
               collapsed: true,
               items: [
-                { text: '01 顺序表的定义', link: '/post/408/408_DS/02/408_DS_5' },
-                { text: '02 基本操作的实现', link: '/post/408/408_DS/02/408_DS_6' },
-                { text: '习题', link: '/post/408/408_DS/02/408_DS_7' },
+                { text: '01 顺序表的定义', link: '/post/kaoyan/408/408_DS/02/408_DS_5' },
+                { text: '02 基本操作的实现', link: '/post/kaoyan/408/408_DS/02/408_DS_6' },
+                { text: '习题', link: '/post/kaoyan/408/408_DS/02/408_DS_7' },
               ]
             },
             {
               text: '线性表的链式表示',
               collapsed: true,
               items: [
-                { text: '01 单链表的定义', link: '/post/408/408_DS/02/408_DS_8' },
-                { text: '02 单链表的基本操作', link: '/post/408/408_DS/02/408_DS_9' },
-                { text: '03 双链表', link: '/post/408/408_DS/02/408_DS_10' },
-                { text: '04 循环链表', link: '/post/408/408_DS/02/408_DS_11' },
-                { text: '05 静态链表', link: '/post/408/408_DS/02/408_DS_12' },
-                { text: '06 顺序表和链表的比较', link: '/post/408/408_DS/02/408_DS_13' },
-                { text: '习题', link: '/post/408/408_DS/02/408_DS_14' },
+                { text: '01 单链表的定义', link: '/post/kaoyan/408/408_DS/02/408_DS_8' },
+                { text: '02 单链表的基本操作', link: '/post/kaoyan/408/408_DS/02/408_DS_9' },
+                { text: '03 双链表', link: '/post/kaoyan/408/408_DS/02/408_DS_10' },
+                { text: '04 循环链表', link: '/post/kaoyan/408/408_DS/02/408_DS_11' },
+                { text: '05 静态链表', link: '/post/kaoyan/408/408_DS/02/408_DS_12' },
+                { text: '06 顺序表和链表的比较', link: '/post/kaoyan/408/408_DS/02/408_DS_13' },
+                { text: '习题', link: '/post/kaoyan/408/408_DS/02/408_DS_14' },
               ]
             }
           ]
@@ -551,45 +551,45 @@ export default defineConfig({
               text: '栈',
               collapsed: true,
               items: [
-                { text: '00 综述', link: '/post/408/408_DS/03/408_DS_1' },
-                { text: '01 栈的基本概念', link: '/post/408/408_DS/03/408_DS_2' },
-                { text: '02 栈的顺序存储结构', link: '/post/408/408_DS/03/408_DS_3' },
-                { text: '03 栈的链式存储结构', link: '/post/408/408_DS/03/408_DS_4' },
-                { text: '习题', link: '/post/408/408_DS/03/408_DS_5' },
+                { text: '00 综述', link: '/post/kaoyan/408/408_DS/03/408_DS_1' },
+                { text: '01 栈的基本概念', link: '/post/kaoyan/408/408_DS/03/408_DS_2' },
+                { text: '02 栈的顺序存储结构', link: '/post/kaoyan/408/408_DS/03/408_DS_3' },
+                { text: '03 栈的链式存储结构', link: '/post/kaoyan/408/408_DS/03/408_DS_4' },
+                { text: '习题', link: '/post/kaoyan/408/408_DS/03/408_DS_5' },
               ]
             },
             {
               text: '队列',
               collapsed: true,
               items: [
-                { text: '01 队列的基本概念', link: '/post/408/408_DS/03/408_DS_6' },
-                { text: '02 队列的顺序存储结构', link: '/post/408/408_DS/03/408_DS_7' },
-                { text: '03 队列的链式存储结构', link: '/post/408/408_DS/03/408_DS_8' },
-                { text: '04 双端队列', link: '/post/408/408_DS/03/408_DS_9' },
-                { text: '习题', link: '/post/408/408_DS/03/408_DS_10' },
+                { text: '01 队列的基本概念', link: '/post/kaoyan/408/408_DS/03/408_DS_6' },
+                { text: '02 队列的顺序存储结构', link: '/post/kaoyan/408/408_DS/03/408_DS_7' },
+                { text: '03 队列的链式存储结构', link: '/post/kaoyan/408/408_DS/03/408_DS_8' },
+                { text: '04 双端队列', link: '/post/kaoyan/408/408_DS/03/408_DS_9' },
+                { text: '习题', link: '/post/kaoyan/408/408_DS/03/408_DS_10' },
               ]
              },
              {
               text: '栈和队列的应用',
               collapsed: true,
               items: [
-                { text: '01 栈在括号匹配中的应用', link: '/408_DS/03/408_DS_11' },
-                { text: '02 栈在表达式求值中的应用', link: '/408_DS/03/408_DS_12' },
-                { text: '03 栈在递归中的应用', link: '/408_DS/03/408_DS_13' },
-                { text: '04 队列在层次遍历中的应用', link: '/408_DS/03/408_DS_14' },
-                { text: '05 队列在计算机系统中的应用', link: '/408_DS/03/408_DS_15' },
-                { text: '习题', link: '/408_DS/03/408_DS_16' },
+                { text: '01 栈在括号匹配中的应用', link: '/post/kaoyan/408/408_DS/03/408_DS_11' },
+                { text: '02 栈在表达式求值中的应用', link: '/post/kaoyan/408/408_DS/03/408_DS_12' },
+                { text: '03 栈在递归中的应用', link: '/post/kaoyan/408/408_DS/03/408_DS_13' },
+                { text: '04 队列在层次遍历中的应用', link: '/post/kaoyan/408/408_DS/03/408_DS_14' },
+                { text: '05 队列在计算机系统中的应用', link: '/post/kaoyan/408/408_DS/03/408_DS_15' },
+                { text: '习题', link: '/post/kaoyan/408/408_DS/03/408_DS_16' },
               ]
              },
              {
               text: '数组和特殊矩阵',
               collapsed: true,
               items: [
-                { text: '01 数组的定义', link: '/408_DS/03/408_DS_17' },
-                { text: '02 数组的存储结构', link: '/408_DS/03/408_DS_18' },
-                { text: '03 特殊矩阵的压缩存储', link: '/408_DS/03/408_DS_19' },
-                { text: '04 稀疏矩阵', link: '/408_DS/03/408_DS_20' },
-                { text: '习题', link: '/408_DS/03/408_DS_21' },
+                { text: '01 数组的定义', link: '/post/kaoyan/408/408_DS/03/408_DS_17' },
+                { text: '02 数组的存储结构', link: '/post/kaoyan/408/408_DS/03/408_DS_18' },
+                { text: '03 特殊矩阵的压缩存储', link: '/post/kaoyan/408/408_DS/03/408_DS_19' },
+                { text: '04 稀疏矩阵', link: '/post/kaoyan/408/408_DS/03/408_DS_20' },
+                { text: '习题', link: '/post/kaoyan/408/408_DS/03/408_DS_21' },
               ]
              }
           ]
@@ -602,20 +602,20 @@ export default defineConfig({
               text: '串的定义和实现',
               collapsed: true,
               items: [
-                { text: '00 综述', link: '/408_DS/04/408_DS_1' },
-                { text: '01 串的定义', link: '/408_DS/04/408_DS_2' },
-                { text: '02 串的基本操作', link: '/408_DS/04/408_DS_3' },
-                { text: '03 串的存储结构', link: '/408_DS/04/408_DS_4' },
+                { text: '00 综述', link: '/post/kaoyan/408/408_DS/04/408_DS_1' },
+                { text: '01 串的定义', link: '/post/kaoyan/408/408_DS/04/408_DS_2' },
+                { text: '02 串的基本操作', link: '/post/kaoyan/408/408_DS/04/408_DS_3' },
+                { text: '03 串的存储结构', link: '/post/kaoyan/408/408_DS/04/408_DS_4' },
               ]
             },
             {
               text: '串的模式匹配',
               collapsed: true,
               items: [
-                { text: '01 简单的模式匹配算法', link: '/408_DS/04/408_DS_5' },
-                { text: '02 KMP算法', link: '/408_DS/04/408_DS_6' },
-                { text: '03 改进的KMP算法', link: '/408_DS/04/408_DS_7' },
-                { text: '习题', link: '/408_DS/04/408_DS_8' },
+                { text: '01 简单的模式匹配算法', link: '/post/kaoyan/408/408_DS/04/408_DS_5' },
+                { text: '02 KMP算法', link: '/post/kaoyan/408/408_DS/04/408_DS_6' },
+                { text: '03 改进的KMP算法', link: '/post/kaoyan/408/408_DS/04/408_DS_7' },
+                { text: '习题', link: '/post/kaoyan/408/408_DS/04/408_DS_8' },
               ]
             }
           ]
