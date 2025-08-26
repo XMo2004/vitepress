@@ -73,10 +73,10 @@ export default defineConfig({
       },
       { text: '408笔记',
         items: [
-          { text: '数据结构', link: '/post/408/408_DS/01/408_DS_0' },
-          { text: '计算机组成原理', link: '/post/408/408_CP/01/408_CP_0' },
-          { text: '操作系统', link: '/post/408/408_OS/01/408_OS_0' },
-          { text: '计算机网络', link: '/post/408/408_CN/01/408_CN_0' },
+          { text: '数据结构', link: '/post/kaoyan/408/408_DS/01/408_DS_0' },
+          { text: '计算机组成原理', link: '/post/kaoyan/408/408_CP/01/408_CP_0' },
+          { text: '操作系统', link: '/post/kaoyan/408/408_OS/01/408_OS_0' },
+          { text: '计算机网络', link: '/post/kaoyan/408/408_CN/01/408_CN_0' },
         ]
       },
       {
@@ -479,7 +479,7 @@ export default defineConfig({
           ]
         }
       ],
-      '/post/408/408_DS/': [
+      '/post/kaoyan/408/408_DS/': [
         {
           text: '第一章 绪论',
           collapsed: true,
@@ -876,17 +876,111 @@ export default defineConfig({
           ]
         }
       ],
-      '/408_CN/': [
+      '/post/kaoyan/408/408_CN/': [
         {
-          text: '01 网络基础',
+          text: '计算机网络体系结构',
           collapsed: true,
           items: [
-            { text: '01 网络基础', link: '/408_DS/14/408_DS_18' },
-            { text: '02 网络协议', link: '/408_DS/14/408_DS_19' },
-            { text: '习题', link: '/408_DS/14/408_DS_20' },
+            {
+              text: '计算机网络概述',
+              collapsed: true,
+              items: [
+                { text: '00 概述', link: '/post/kaoyan/408/408_CN/01/408_CN_0' },
+                { text: '01 概念', link: '/post/kaoyan/408/408_CN/01/408_CN_1' },
+                { text: '02 组成', link: '/post/kaoyan/408/408_CN/01/408_CN_2' },
+                { text: '03 功能', link: '/post/kaoyan/408/408_CN/01/408_CN_3' },
+                { text: '04 三种交换技术', link: '/post/kaoyan/408/408_CN/01/408_CN_4' },
+                { text: '05 分类', link: '/post/kaoyan/408/408_CN/01/408_CN_5' },
+                { text: '06 性能指标', link: '/post/kaoyan/408/408_CN/01/408_CN_6' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_7' },
+              ]
+            },
+            {
+              text: '体系结构与参考模型',
+              collapsed: true,
+              items: [
+                { text: '01 分层结构', link: '/post/kaoyan/408/408_CN/01/408_CN_8' },
+                { text: '02 协议、接口、服务', link: '/post/kaoyan/408/408_CN/01/408_CN_9' },
+                { text: '03 ISO/OSI 和 TCP/IP ', link: '/post/kaoyan/408/408_CN/01/408_CN_10' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_11' },
+              ]
+            },
+          ],
+        },
+        {
+          text: '物理层',
+          collapsed: true,
+          items: [
+            {
+              text: '通信基础',
+              collapsed: true,
+              items: [
+                { text: '00 概述', link: '/post/kaoyan/408/408_CN/01/408_CN_12' },
+                { text: '01 基本概念', link: '/post/kaoyan/408/408_CN/01/408_CN_13' },
+                { text: '02 信道的极限容量', link: '/post/kaoyan/408/408_CN/01/408_CN_14' },
+                { text: '03 编码与调制', link: '/post/kaoyan/408/408_CN/01/408_CN_15' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_16' },
+              ]
+            },
+            {
+              text: '传输介质',
+              collapsed: true,
+              items: [
+                { text: '01 常见的传输介质', link: '/post/kaoyan/408/408_CN/01/408_CN_17' },
+                { text: '02 物理层接口的特性', link: '/post/kaoyan/408/408_CN/01/408_CN_18' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_19' },
+              ]
+            },
+            {
+              text: '物理层设备',
+              collapsed: true,
+              items: [
+                { text: '01 中继器', link: '/post/kaoyan/408/408_CN/01/408_CN_20' },
+                { text: '02 集线器', link: '/post/kaoyan/408/408_CN/01/408_CN_21' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_22' },
+              ]
+            }
           ]
-        }
-      ],
+        },
+        {
+          text: '数据链路层',
+          collapsed: true,
+          items: [
+            {
+              text: '功能',
+              collapsed: true,
+              items: [
+                { text: '00 概述', link: '/post/kaoyan/408/408_CN/01/408_CN_23' },
+                { text: '01 地位', link: '/post/kaoyan/408/408_CN/01/408_CN_24' },
+                { text: '02 封装成帧、透明传输', link: '/post/kaoyan/408/408_CN/01/408_CN_25' },
+                { text: '03 流量控制', link: '/post/kaoyan/408/408_CN/01/408_CN_26' },
+                { text: '04 差错检测', link: '/post/kaoyan/408/408_CN/01/408_CN_27' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_28' },
+              ]
+            },
+            {
+              text: '组帧',
+              collapsed: true,
+              items: [
+                { text: '01 字符计数法', link: '/post/kaoyan/408/408_CN/01/408_CN_29' },
+                { text: '02 字节填充法', link: '/post/kaoyan/408/408_CN/01/408_CN_30' },
+                { text: '03 零比特填充法', link: '/post/kaoyan/408/408_CN/01/408_CN_31' },
+                { text: '04 违规编码法', link: '/post/kaoyan/408/408_CN/01/408_CN_32' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_33' },
+              ]
+            },
+            {
+              text: '差错控制',
+              collapsed: true,
+              items: [
+                { text: '01 检错编码', link: '/post/kaoyan/408/408_CN/01/408_CN_34' },
+                { text: '02 纠错编码', link: '/post/kaoyan/408/408_CN/01/408_CN_35' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_36' },
+              ]
+            }
+          ]
+          },
+        ],
       '/AdvancedMath/': [
         {
           text: '第一章 函数、极限与连续',
