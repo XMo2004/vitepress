@@ -180,8 +180,7 @@ watch(() => quizStatistics?.showWrongOnly?.value, () => {
   border-radius: 10px;
   padding: 30px 40px 20px 40px;
   margin: 25px 0 25px 0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(209, 200, 200, 0.67);
 }
 
 .question {
@@ -362,8 +361,7 @@ watch(() => quizStatistics?.showWrongOnly?.value, () => {
   line-height: 1.6;
   color: var(--vp-c-text-2);
   background-color: var(--vp-c-bg);
-  padding-top: 5px;
-  padding-left: 10px;
+  padding: 5px 0 0 10px;
   border-radius: 6px;
 }
 
