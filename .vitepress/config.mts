@@ -977,8 +977,138 @@ export default defineConfig({
                 { text: '02 纠错编码', link: '/post/kaoyan/408/408_CN/01/408_CN_35' },
                 { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_36' },
               ]
+            },
+            {
+              text: '流量控制可靠传输机制',
+              collapsed: true,
+              items: [
+                { text: '01 滑动窗口', link: '/post/kaoyan/408/408_CN/01/408_CN_37' },
+                { text: '02 可靠传输机制', link: '/post/kaoyan/408/408_CN/01/408_CN_38' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_39' },
+              ]
+            },
+            {
+              text: '介质访问控制',
+              collapsed: true,
+              items: [
+                { text: '01 信道划分', link: '/post/kaoyan/408/408_CN/01/408_CN_40' },
+                { text: '02 随机访问', link: '/post/kaoyan/408/408_CN/01/408_CN_41' },
+                { text: '03 轮询访问', link: '/post/kaoyan/408/408_CN/01/408_CN_42' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_43' },
+              ]
+            },
+            {
+              text: '局域网',
+              collapsed: true,
+              items: [
+                { text: '01 基本概念', link: '/post/kaoyan/408/408_CN/01/408_CN_44' },
+                { text: '02 以太网', link: '/post/kaoyan/408/408_CN/01/408_CN_45' },
+                { text: '03 无线局域网', link: '/post/kaoyan/408/408_CN/01/408_CN_46' },
+                { text: '04 VLAN', link: '/post/kaoyan/408/408_CN/01/408_CN_47' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_48' },
+              ]
+            },
+            {
+              text: '广域网',
+              collapsed: true,
+              items: [
+                { text: '01 基本概念', link: '/post/kaoyan/408/408_CN/01/408_CN_49' },
+                { text: '02 点对点协议', link: '/post/kaoyan/408/408_CN/01/408_CN_50' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_51' },
+              ]
+            },
+            {
+              text: '数据链路层设备',
+              collapsed: true,
+              items: [
+                { text: '01 网桥的基本概念', link: '/post/kaoyan/408/408_CN/01/408_CN_52' },
+                { text: '02 以太网交换机', link: '/post/kaoyan/408/408_CN/01/408_CN_53' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_54' },
+              ]
             }
           ]
+          },
+          {
+            text: '网络层',
+            collapsed: true,
+            items: [
+              {
+              text: '功能',
+              collapsed: true,
+              items: [
+                { text: '00 概述', link: '/post/kaoyan/408/408_CN/01/408_CN_55' },
+                { text: '01 异构网络互联', link: '/post/kaoyan/408/408_CN/01/408_CN_56' },
+                { text: '02 路由与转发', link: '/post/kaoyan/408/408_CN/01/408_CN_57' },
+                { text: '03 两种服务', link: '/post/kaoyan/408/408_CN/01/408_CN_58' },
+                { text: '04 SDN', link: '/post/kaoyan/408/408_CN/01/408_CN_59' },
+                { text: '05 拥塞控制', link: '/post/kaoyan/408/408_CN/01/408_CN_60' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_61' },
+              ]
+            },
+            {
+              text: 'IPv4',
+              collapsed: true,
+              items: [
+                { text: '01 IPv4 分组', link: '/post/kaoyan/408/408_CN/01/408_CN_62' },
+                { text: '02 IPv4 地址与 NAT', link: '/post/kaoyan/408/408_CN/01/408_CN_63' },
+                { text: '03 划分子网与路由聚合', link: '/post/kaoyan/408/408_CN/01/408_CN_64' },
+                { text: '04 地址解析协议', link: '/post/kaoyan/408/408_CN/01/408_CN_65' },
+                { text: '05 DHCP', link: '/post/kaoyan/408/408_CN/01/408_CN_66' },
+                { text: '06 ICMP', link: '/post/kaoyan/408/408_CN/01/408_CN_67' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_68' },
+              ]
+            },
+            {
+              text: 'IPv6',
+              collapsed: true,
+              items: [
+                { text: '01 IPv6 的特点', link: '/post/kaoyan/408/408_CN/01/408_CN_69' },
+                { text: '02 IPv6 数据报基本首部', link: '/post/kaoyan/408/408_CN/01/408_CN_70' },
+                { text: '03 IPv6 地址', link: '/post/kaoyan/408/408_CN/01/408_CN_71' },
+                { text: '04 从 IPv4 向 IPv6 过渡', link: '/post/kaoyan/408/408_CN/01/408_CN_72' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_73' },
+              ]
+            },
+            {
+              text: '路由算法与路由协议',
+              collapsed: true,
+              items: [
+                { text: '01 路由算法', link: '/post/kaoyan/408/408_CN/01/408_CN_74' },
+                { text: '02 分层次路由选择协议', link: '/post/kaoyan/408/408_CN/01/408_CN_75' },
+                { text: '03 路由信息协议', link: '/post/kaoyan/408/408_CN/01/408_CN_76' },
+                { text: '04 开放最短路径优先协议', link: '/post/kaoyan/408/408_CN/01/408_CN_77' },
+                { text: '05 边界网关协议', link: '/post/kaoyan/408/408_CN/01/408_CN_78' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_79' },
+              ]
+            },
+            ]
+          },
+          {
+            text: '传输层',
+            collapsed: true,
+            items: [
+            {
+              text: '服务',
+              collapsed: true,
+              items: [
+                { text: '00 概述', link: '/post/kaoyan/408/408_CN/01/408_CN_80' },
+                { text: '01 传输层的功能', link: '/post/kaoyan/408/408_CN/01/408_CN_81' },
+                { text: '02 寻址与端口', link: '/post/kaoyan/408/408_CN/01/408_CN_82' },
+                { text: '03 服务', link: '/post/kaoyan/408/408_CN/01/408_CN_83' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_84' },
+              ]
+            },
+            ]
+          },
+          {
+            text: '应用层',
+            collapsed: true,
+            items: [
+              { text: '01 应用层协议', link: '/post/kaoyan/408/408_CN/01/408_CN_85' },
+              { text: '02 HTTP', link: '/post/kaoyan/408/408_CN/01/408_CN_86' },
+              { text: '03 域名系统', link: '/post/kaoyan/408/408_CN/01/408_CN_87' },
+              { text: '04 文件传输协议', link: '/post/kaoyan/408/408_CN/01/408_CN_88' },
+            ]
           },
         ],
       '/AdvancedMath/': [

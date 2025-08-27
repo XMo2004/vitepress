@@ -1,6 +1,6 @@
 /* 字体加粗 */
 .bold{
-    font-weight: 900; 
+    text-shadow: 0.22px 0 0 currentColor, -0.22px 0 0 currentColor, 0 0.22px 0 currentColor, 0 -0.22px 0 currentColor;
     text-shadow: 0.5px 0 0 currentColor;
 }
 
@@ -13,7 +13,7 @@
 .kaiti-b{
     font-family: '楷体', KaiTi, STKaiti, SimKai;
     font-size: 1.1em;
-    font-weight: 900; 
+    text-shadow: 0.22px 0 0 currentColor, -0.22px 0 0 currentColor, 0 0.22px 0 currentColor, 0 -0.22px 0 currentColor;
     text-shadow: 0.5px 0 0 currentColor;
 }
 
@@ -49,14 +49,13 @@
 /* 红色加粗字体 */
 .red-bold {
     color: rgb(202, 36, 40);
-    font-weight: 900;
+    text-shadow: 0.22px 0 0 currentColor, -0.22px 0 0 currentColor, 0 0.22px 0 currentColor, 0 -0.22px 0 currentColor;
 }
 
 /* 蓝色字体 */
 .blue-bold{
     color: #1e40af;
-    font-weight: 900; 
-    text-shadow: 0.5px 0 0 currentColor;
+    text-shadow: 0.22px 0 0 currentColor, -0.22px 0 0 currentColor, 0 0.22px 0 currentColor, 0 -0.22px 0 currentColor;
 }
 
 .blue{
@@ -88,13 +87,13 @@
 /* 绿色加粗字体 */
 .green-bold {
     color: rgba(20, 130, 131, 1);
-    font-weight: 900;
+    text-shadow: 0.22px 0 0 currentColor, -0.22px 0 0 currentColor, 0 0.22px 0 currentColor, 0 -0.22px 0 currentColor;
 }
 
 /* 谷歌蓝色字体（强调） */
 .google-blue {
     color: #1E88E5;
-    font-weight:900;
+    text-shadow: 0.22px 0 0 currentColor, -0.22px 0 0 currentColor, 0 0.22px 0 currentColor, 0 -0.22px 0 currentColor;
 }
 
 /* 绿色高亮 */

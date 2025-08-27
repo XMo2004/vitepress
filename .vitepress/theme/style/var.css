@@ -23,3 +23,9 @@ body {
     text-decoration: none;
 }
 
+/* 设置正文字体为霞鹜文楷 */
+.vp-doc {
+  font-size: 1.05em;
+    font-family: "LXGW WenKai", "霞鹜文楷", "LXGW WenKai Screen", "霞鹜文楷 Screen", serif;
+}
+

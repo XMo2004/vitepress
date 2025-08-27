@@ -1,27 +1,64 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, inject, onMounted, watch } from 'vue'
 import MarkdownIt from 'markdown-it'
 import mathjax3 from 'markdown-it-mathjax3'
 
-const md = MarkdownIt().use(mathjax3)
+const md = MarkdownIt({ 
+  html: true,        // 启用HTML标签支持
+  breaks: true,      // 启用换行符转换为<br>
+  linkify: true,     // 自动识别链接
+  typographer: true  // 启用智能引号和其他排版功能
+}).use(mathjax3)
 
 interface Props {
   question: string
   options: string[]
   correctAnswer: number // 正确答案的索引（0-based）
   explanation?: string // 解析内容
+  image?: string // 题目图片URL
+  imageWidth?: string // 图片宽度样式
+  explanationImage?: string // 解析图片URL
+  explanationImageWidth?: string // 解析图片宽度样式
 }
 
 const props = withDefaults(defineProps<Props>(), {
   question: '',
   options: () => [],
   correctAnswer: 0,
-  explanation: ''
+  explanation: '',
+  imageWidth: '100%',
+  explanationImageWidth: '100%'
 })
+
+// 注入统计功能
+const quizStatistics = inject('quizStatistics', null) as any
+
+function generateQuizId() {
+  // 基于题目内容生成唯一ID，使用更稳定的哈希算法
+  const content = props.question + props.options.join('|') + props.correctAnswer
+  // 使用简单的哈希函数生成稳定的ID
+  let hash = 0
+  for (let i = 0; i < content.length; i++) {
+    const char = content.charCodeAt(i)
+    hash = ((hash << 5) - hash) + char
+    hash = hash & hash // 转换为32位整数
+  }
+  return 'quiz_' + Math.abs(hash).toString(36)
+}
+
+// 生成唯一ID - 使用computed确保props变化时重新计算
+const quizId = computed(() => generateQuizId())
 
 const selectedOption = ref<number | null>(null)
 const showResult = ref(false)
 const showExplanation = ref(false)
+
+// 检查是否应该隐藏（错题筛选模式）
+const shouldHide = computed(() => {
+  if (!quizStatistics?.showWrongOnly?.value) return false
+  const record = quizStatistics?.getQuizRecord(quizId.value)
+  return record?.isAnswered && record?.isCorrect
+})
 
 const isCorrect = computed(() => {
   return selectedOption.value === props.correctAnswer
@@ -29,19 +66,43 @@ const isCorrect = computed(() => {
 
 const selectOption = (index: number) => {
   if (showResult.value) return // 已经显示结果后不能再选择
-  selectedOption.value = index
-  // 直接提交答案
-  showResult.value = true
-  // 延迟显示解析
-  setTimeout(() => {
-    showExplanation.value = true
-  }, 500)
+  
+  try {
+    selectedOption.value = index
+    // 直接提交答案
+    showResult.value = true
+    
+    // 更新统计数据
+    if (quizStatistics) {
+      const currentQuizId = quizId.value
+      quizStatistics.updateQuizRecord(currentQuizId, index, props.correctAnswer)
+      console.log('Quiz answered:', currentQuizId, 'selected:', index, 'correct:', props.correctAnswer)
+    }
+    
+    // 延迟显示解析
+    setTimeout(() => {
+      showExplanation.value = true
+    }, 500)
+  } catch (error) {
+    console.error('Failed to select option:', error)
+  }
 }
 
 const resetQuiz = () => {
-  selectedOption.value = null
-  showResult.value = false
-  showExplanation.value = false
+  try {
+    selectedOption.value = null
+    showResult.value = false
+    showExplanation.value = false
+    
+    // 重置统计数据
+    if (quizStatistics) {
+      const currentQuizId = quizId.value
+      quizStatistics.resetQuiz(currentQuizId)
+      console.log('Quiz reset:', currentQuizId)
+    }
+  } catch (error) {
+    console.error('Failed to reset quiz:', error)
+  }
 }
 
 const getOptionLabel = (index: number) => {
@@ -51,12 +112,62 @@ const getOptionLabel = (index: number) => {
 const renderMarkdown = (content: string) => {
   return md.render(content)
 }
+
+// 初始化和恢复状态
+const initializeQuiz = () => {
+  if (quizStatistics) {
+    try {
+      const currentQuizId = quizId.value
+      // 注册题目并获取记录
+      const record = quizStatistics.registerQuiz(currentQuizId, props.correctAnswer)
+      
+      // 恢复已答状态
+      if (record?.isAnswered && record.selectedAnswer !== null) {
+        selectedOption.value = record.selectedAnswer
+        showResult.value = true
+        showExplanation.value = true
+        console.log('Quiz state restored for:', currentQuizId, 'selected:', record.selectedAnswer)
+      } else {
+        // 确保状态重置
+        selectedOption.value = null
+        showResult.value = false
+        showExplanation.value = false
+      }
+    } catch (error) {
+      console.error('Failed to initialize quiz:', error)
+      // 发生错误时重置状态
+      selectedOption.value = null
+      showResult.value = false
+      showExplanation.value = false
+    }
+  }
+}
+
+// 监听quizId变化，重新初始化
+watch(quizId, () => {
+  // 当ID变化时重新初始化
+  initializeQuiz()
+}, { immediate: false })
+
+onMounted(() => {
+  initializeQuiz()
+})
+
+// 监听错题筛选状态变化
+watch(() => quizStatistics?.showWrongOnly?.value, () => {
+  // 当筛选状态改变时，可以添加一些动画效果
+}, { immediate: true })
 </script>
 
 <template>
-  <div class="quiz-choice">
+  <div class="quiz-choice" v-show="!shouldHide">
     <!-- 题目 -->
     <div class="question" v-html="renderMarkdown(props.question)"></div>
+    
+    <!-- 题目图片 -->
+    <div class="question-image" v-if="props.image" style="display: flex; justify-content: center;">
+      <img :src="props.image" alt="题目图片" :style="`max-width: ${props.imageWidth}; border-radius: 8px; margin: 10px 0;`">
+    </div>
     
     <!-- 选项 -->
     <div class="options">
@@ -90,10 +201,13 @@ const renderMarkdown = (content: string) => {
     <!-- 解析 -->
     <div class="explanation" v-if="showExplanation && props.explanation">
       <div class="explanation-header">
-        <span class="icon">💡</span>
-        <span class="title">解析</span>
+        <span class="blue-bold">【解析】</span>
       </div>
       <div class="explanation-content" v-html="renderMarkdown(props.explanation)"></div>
+      <!-- 解析图片 -->
+      <div class="explanation-image" v-if="props.explanationImage" style="display: flex; justify-content: center;">
+        <img :src="props.explanationImage" alt="解析图片" :style="`max-width: ${props.explanationImageWidth}; border-radius: 8px; margin: 10px 0;`">
+      </div>
     </div>
   </div>
 </template>
@@ -118,6 +232,62 @@ const renderMarkdown = (content: string) => {
   line-height: 1.5;
   color: var(--vp-c-text-1);
   margin-top: 2px;
+}
+
+/* 支持题目内容中的段落和列表样式 */
+.question :deep(p) {
+  margin: 8px 0;
+}
+
+.question :deep(p:first-child) {
+  margin-top: 0;
+}
+
+.question :deep(p:last-child) {
+  margin-bottom: 0;
+}
+
+.question :deep(ul),
+.question :deep(ol) {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.question :deep(li) {
+  margin: 4px 0;
+}
+
+.question :deep(strong) {
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+.question :deep(em) {
+  font-style: italic;
+}
+
+.question :deep(code) {
+  background-color: var(--vp-c-bg-soft);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: var(--vp-font-family-mono);
+  font-size: 1.05em;
+}
+
+.question :deep(pre) {
+  background-color: var(--vp-c-bg-soft);
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 8px 0;
+}
+
+.question :deep(blockquote) {
+  border-left: 4px solid var(--vp-c-divider);
+  padding-left: 12px;
+  margin: 8px 0;
+  color: var(--vp-c-text-2);
+  font-style: italic;
 }
 
 .options {
@@ -224,23 +394,74 @@ const renderMarkdown = (content: string) => {
 .explanation-header {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
   font-weight: 600;
   color: var(--vp-c-text-1);
-}
-
-.explanation-header .icon {
-  margin-right: 8px;
-  font-size: 16px;
 }
 
 .explanation-content {
   line-height: 1.6;
   color: var(--vp-c-text-2);
   background-color: var(--vp-c-bg);
+  padding-top: 5px;
+  padding-left: 10px;
+  border-radius: 6px;
+}
+
+/* 支持解析内容中的段落和列表样式 */
+.explanation-content :deep(p) {
+  margin: 8px 0;
+}
+
+.explanation-content :deep(p:first-child) {
+  margin-top: 0;
+}
+
+.explanation-content :deep(p:last-child) {
+  margin-bottom: 0;
+}
+
+.explanation-content :deep(ul),
+.explanation-content :deep(ol) {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.explanation-content :deep(li) {
+  margin: 4px 0;
+}
+
+.explanation-content :deep(strong) {
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+.explanation-content :deep(em) {
+  font-style: italic;
+}
+
+.explanation-content :deep(code) {
+  background-color: var(--vp-c-bg-soft);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: var(--vp-font-family-mono);
+  font-size: 1.05em;
+}
+
+.explanation-content :deep(pre) {
+  background-color: var(--vp-c-bg-soft);
   padding: 12px;
   border-radius: 6px;
-  border-left: 4px solid var(--vp-c-brand-1);
+  overflow-x: auto;
+  margin: 8px 0;
+}
+
+.explanation-content :deep(blockquote) {
+  border-left: 4px solid var(--vp-c-divider);
+  padding-left: 12px;
+  margin: 8px 0;
+  color: var(--vp-c-text-2);
+  font-style: italic;
 }
 
 @keyframes slideDown {
