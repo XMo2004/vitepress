@@ -9,6 +9,7 @@ interface QuizRecord {
   correctAnswer: number
 }
 
+
 interface QuizStats {
   totalQuestions: number
   answeredQuestions: number
