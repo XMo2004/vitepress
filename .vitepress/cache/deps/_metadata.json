@@ -1,79 +1,85 @@
 {
-  "hash": "65a225d1",
+  "hash": "c06e13f0",
   "configHash": "b49a75c4",
-  "lockfileHash": "36516451",
-  "browserHash": "89a0ae1c",
+  "lockfileHash": "b61bf9d1",
+  "browserHash": "a6961073",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "4db43f5f",
+      "fileHash": "7321e5d7",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "4204fdfe",
+      "fileHash": "ad7791e9",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "97a4109f",
+      "fileHash": "f56faefd",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "8b6c5605",
+      "fileHash": "a99e301d",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "eb4842fd",
+      "fileHash": "2c78b705",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "b17239e1",
+      "fileHash": "e564c8c2",
       "needsInterop": false
     },
     "ogl": {
       "src": "../../../node_modules/ogl/src/index.js",
       "file": "ogl.js",
-      "fileHash": "5c897e18",
+      "fileHash": "31f3fa79",
       "needsInterop": false
     },
     "gsap": {
       "src": "../../../node_modules/gsap/index.js",
       "file": "gsap.js",
-      "fileHash": "46b3d1f3",
+      "fileHash": "c0945c12",
       "needsInterop": false
     },
     "marked": {
       "src": "../../../node_modules/marked/lib/marked.esm.js",
       "file": "marked.js",
-      "fileHash": "8422f9f8",
+      "fileHash": "63409f5a",
       "needsInterop": false
     },
     "dompurify": {
       "src": "../../../node_modules/dompurify/dist/purify.es.mjs",
       "file": "dompurify.js",
-      "fileHash": "985ab9dd",
+      "fileHash": "4498030a",
       "needsInterop": false
     },
     "markdown-it": {
       "src": "../../../node_modules/markdown-it/index.mjs",
       "file": "markdown-it.js",
-      "fileHash": "c4d4f9b6",
+      "fileHash": "5dded370",
       "needsInterop": false
     },
     "markdown-it-mathjax3": {
       "src": "../../../node_modules/markdown-it-mathjax3/index.js",
       "file": "markdown-it-mathjax3.js",
-      "fileHash": "39140c4a",
+      "fileHash": "c596f491",
+      "needsInterop": true
+    },
+    "markdown-it-katex": {
+      "src": "../../../node_modules/markdown-it-katex/index.js",
+      "file": "markdown-it-katex.js",
+      "fileHash": "6eb26dad",
       "needsInterop": true
     }
   },

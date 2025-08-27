@@ -30,24 +30,17 @@ const props = withDefaults(defineProps<Props>(), {
   explanationImageWidth: '100%'
 })
 
+// 生成唯一ID
+const quizId = ref(generateQuizId())
+
 // 注入统计功能
 const quizStatistics = inject('quizStatistics', null) as any
 
 function generateQuizId() {
-  // 基于题目内容生成唯一ID，使用更稳定的哈希算法
-  const content = props.question + props.options.join('|') + props.correctAnswer
-  // 使用简单的哈希函数生成稳定的ID
-  let hash = 0
-  for (let i = 0; i < content.length; i++) {
-    const char = content.charCodeAt(i)
-    hash = ((hash << 5) - hash) + char
-    hash = hash & hash // 转换为32位整数
-  }
-  return 'quiz_' + Math.abs(hash).toString(36)
+  // 基于题目内容生成唯一ID
+  const content = props.question + props.options.join('') + props.correctAnswer
+  return btoa(encodeURIComponent(content)).replace(/[^a-zA-Z0-9]/g, '').substring(0, 16)
 }
-
-// 生成唯一ID - 使用computed确保props变化时重新计算
-const quizId = computed(() => generateQuizId())
 
 const selectedOption = ref<number | null>(null)
 const showResult = ref(false)
@@ -66,42 +59,29 @@ const isCorrect = computed(() => {
 
 const selectOption = (index: number) => {
   if (showResult.value) return // 已经显示结果后不能再选择
+  selectedOption.value = index
+  // 直接提交答案
+  showResult.value = true
   
-  try {
-    selectedOption.value = index
-    // 直接提交答案
-    showResult.value = true
-    
-    // 更新统计数据
-    if (quizStatistics) {
-      const currentQuizId = quizId.value
-      quizStatistics.updateQuizRecord(currentQuizId, index, props.correctAnswer)
-      console.log('Quiz answered:', currentQuizId, 'selected:', index, 'correct:', props.correctAnswer)
-    }
-    
-    // 延迟显示解析
-    setTimeout(() => {
-      showExplanation.value = true
-    }, 500)
-  } catch (error) {
-    console.error('Failed to select option:', error)
+  // 更新统计数据
+  if (quizStatistics) {
+    quizStatistics.updateQuizRecord(quizId.value, index, props.correctAnswer)
   }
+  
+  // 延迟显示解析
+  setTimeout(() => {
+    showExplanation.value = true
+  }, 500)
 }
 
 const resetQuiz = () => {
-  try {
-    selectedOption.value = null
-    showResult.value = false
-    showExplanation.value = false
-    
-    // 重置统计数据
-    if (quizStatistics) {
-      const currentQuizId = quizId.value
-      quizStatistics.resetQuiz(currentQuizId)
-      console.log('Quiz reset:', currentQuizId)
-    }
-  } catch (error) {
-    console.error('Failed to reset quiz:', error)
+  selectedOption.value = null
+  showResult.value = false
+  showExplanation.value = false
+  
+  // 重置统计数据
+  if (quizStatistics) {
+    quizStatistics.resetQuiz(quizId.value)
   }
 }
 
@@ -116,38 +96,17 @@ const renderMarkdown = (content: string) => {
 // 初始化和恢复状态
 const initializeQuiz = () => {
   if (quizStatistics) {
-    try {
-      const currentQuizId = quizId.value
-      // 注册题目并获取记录
-      const record = quizStatistics.registerQuiz(currentQuizId, props.correctAnswer)
-      
-      // 恢复已答状态
-      if (record?.isAnswered && record.selectedAnswer !== null) {
-        selectedOption.value = record.selectedAnswer
-        showResult.value = true
-        showExplanation.value = true
-        console.log('Quiz state restored for:', currentQuizId, 'selected:', record.selectedAnswer)
-      } else {
-        // 确保状态重置
-        selectedOption.value = null
-        showResult.value = false
-        showExplanation.value = false
-      }
-    } catch (error) {
-      console.error('Failed to initialize quiz:', error)
-      // 发生错误时重置状态
-      selectedOption.value = null
-      showResult.value = false
-      showExplanation.value = false
+    // 注册题目并获取记录
+    const record = quizStatistics.registerQuiz(quizId.value, props.correctAnswer)
+    
+    // 恢复已答状态
+    if (record?.isAnswered) {
+      selectedOption.value = record.selectedAnswer
+      showResult.value = true
+      showExplanation.value = true
     }
   }
 }
-
-// 监听quizId变化，重新初始化
-watch(quizId, () => {
-  // 当ID变化时重新初始化
-  initializeQuiz()
-}, { immediate: false })
 
 onMounted(() => {
   initializeQuiz()
