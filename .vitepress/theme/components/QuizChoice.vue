@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, inject, onMounted, watch } from 'vue'
+import { ref, computed, inject, onMounted, watch, defineProps, withDefaults } from 'vue'
 import MarkdownIt from 'markdown-it'
 import mathjax3 from 'markdown-it-mathjax3'
 
@@ -46,6 +46,56 @@ const selectedOption = ref<number | null>(null)
 const showResult = ref(false)
 const showExplanation = ref(false)
 
+// LocalStorage 相关函数
+const getStorageKey = () => {
+  return `quiz-state-${quizId.value}`
+}
+
+const saveQuizState = () => {
+  const state = {
+    selectedOption: selectedOption.value,
+    showResult: showResult.value,
+    showExplanation: showExplanation.value,
+    timestamp: Date.now()
+  }
+  try {
+    localStorage.setItem(getStorageKey(), JSON.stringify(state))
+  } catch (error) {
+    console.warn('Failed to save quiz state to localStorage:', error)
+  }
+}
+
+const loadQuizState = () => {
+  try {
+    const savedState = localStorage.getItem(getStorageKey())
+    if (savedState) {
+      const state = JSON.parse(savedState)
+      // 检查数据是否过期（可选：设置7天过期时间）
+      const isExpired = Date.now() - state.timestamp > 7 * 24 * 60 * 60 * 1000
+      if (!isExpired) {
+        selectedOption.value = state.selectedOption
+        showResult.value = state.showResult
+        showExplanation.value = state.showExplanation
+        return true
+      } else {
+        // 清除过期数据
+        localStorage.removeItem(getStorageKey())
+      }
+    }
+  } catch (error) {
+    console.warn('Failed to load quiz state from localStorage:', error)
+  }
+  return false
+}
+
+const clearQuizState = () => {
+  try {
+    localStorage.removeItem(getStorageKey())
+  } catch (error) {
+    console.warn('Failed to clear quiz state from localStorage:', error)
+  }
+}
+
 // 检查是否应该隐藏（错题筛选模式）
 const shouldHide = computed(() => {
   if (!quizStatistics?.showWrongOnly?.value) return false
@@ -63,6 +113,9 @@ const selectOption = (index: number) => {
   // 直接提交答案
   showResult.value = true
   
+  // 保存状态到 LocalStorage
+  saveQuizState()
+  
   // 更新统计数据
   if (quizStatistics) {
     quizStatistics.updateQuizRecord(quizId.value, index, props.correctAnswer)
@@ -71,6 +124,8 @@ const selectOption = (index: number) => {
   // 延迟显示解析
   setTimeout(() => {
     showExplanation.value = true
+    // 解析显示后再次保存状态
+    saveQuizState()
   }, 500)
 }
 
@@ -78,6 +133,9 @@ const resetQuiz = () => {
   selectedOption.value = null
   showResult.value = false
   showExplanation.value = false
+  
+  // 清除 LocalStorage 中的状态
+  clearQuizState()
   
   // 重置统计数据
   if (quizStatistics) {
@@ -95,7 +153,11 @@ const renderMarkdown = (content: string) => {
 
 // 初始化和恢复状态
 const initializeQuiz = () => {
-  if (quizStatistics) {
+  // 首先尝试从 LocalStorage 恢复状态
+  const hasLocalState = loadQuizState()
+  
+  // 如果没有本地状态，再尝试从统计功能恢复
+  if (!hasLocalState && quizStatistics) {
     // 注册题目并获取记录
     const record = quizStatistics.registerQuiz(quizId.value, props.correctAnswer)
     
@@ -104,6 +166,13 @@ const initializeQuiz = () => {
       selectedOption.value = record.selectedAnswer
       showResult.value = true
       showExplanation.value = true
+      // 将统计功能的状态同步到 LocalStorage
+      saveQuizState()
+    }
+  } else if (hasLocalState && quizStatistics) {
+    // 如果有本地状态，同步到统计功能
+    if (selectedOption.value !== null) {
+      quizStatistics.updateQuizRecord(quizId.value, selectedOption.value, props.correctAnswer)
     }
   }
 }

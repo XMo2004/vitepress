@@ -12,14 +12,6 @@
   font-weight: 600;
 }
 
-/* 分割线样式 */
-.xuxianfg {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
-  margin: 2rem 0;
-}
-
 /* 卡片容器样式 */
 .card-container {
   display: flex;

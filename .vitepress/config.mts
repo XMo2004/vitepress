@@ -82,7 +82,7 @@ export default defineConfig({
       {
         text: '考研笔记',
         items: [
-          { text: '考研数学', link: '/post/AdvancedMath/AdvancedMath_1' },
+          { text: '考研数学', link: '/post/kaoyan/AdvancedMath/AdvancedMath_1' },
           { text: '考研英语', link: '···' },
           { text: '考研政治', link: '···' },
         ]
@@ -1111,67 +1111,67 @@ export default defineConfig({
             ]
           },
         ],
-      '/AdvancedMath/': [
+      '/post/kaoyan/AdvancedMath/': [
         {
           text: '第一章 函数、极限与连续',
           collapsed: true,
           items: [
-            { text: '01 微积分预备知识', link: '/AdvancedMath/AdvancedMath_1' },
-            { text: '02 函数极限定义及性质', link: '/AdvancedMath/AdvancedMath_2' },
-            { text: '03 无穷小量及无穷大量', link: '/AdvancedMath/AdvancedMath_3' },
-            { text: '04 泰勒公式', link: '/AdvancedMath/AdvancedMath_4' },
-            { text: '05 极限四则运算', link: '/AdvancedMath/AdvancedMath_5' },
-            { text: '06 函数极限运算', link: '/AdvancedMath/AdvancedMath_6' },
-            { text: '07 数列极限', link: '/AdvancedMath/AdvancedMath_7' },
-            { text: '08 连续与间断', link: '/AdvancedMath/AdvancedMath_8' },
+            { text: '01 微积分预备知识', link: '/post/kaoyan/AdvancedMath/AdvancedMath_1' },
+            { text: '02 函数极限定义及性质', link: '/post/kaoyan/AdvancedMath/AdvancedMath_2' },
+            { text: '03 无穷小量及无穷大量', link: '/post/kaoyan/AdvancedMath/AdvancedMath_3' },
+            { text: '04 泰勒公式', link: '/post/kaoyan/AdvancedMath/AdvancedMath_4' },
+            { text: '05 极限四则运算', link: '/post/kaoyan/AdvancedMath/AdvancedMath_5' },
+            { text: '06 函数极限运算', link: '/post/kaoyan/AdvancedMath/AdvancedMath_6' },
+            { text: '07 数列极限', link: '/post/kaoyan/AdvancedMath/AdvancedMath_7' },
+            { text: '08 连续与间断', link: '/post/kaoyan/AdvancedMath/AdvancedMath_8' },
           ]
         },
         {
           text: '第二章 一元函数微分学',
           collapsed: true,
           items: [
-            { text: '01 导数定义', link: '/AdvancedMath/AdvancedMath_9' },
-            { text: '02 导数计算', link: '/AdvancedMath/AdvancedMath_10' },
-            { text: '03 导数几何意义', link: '/AdvancedMath/AdvancedMath_11' },
-            { text: '04 微分的计算及几何意义', link: '/AdvancedMath/AdvancedMath_12' },
-            { text: '05 导数的微分学应用', link: '/AdvancedMath/AdvancedMath_13' },
+            { text: '01 导数定义', link: '/post/kaoyan/AdvancedMath/AdvancedMath_9' },
+            { text: '02 导数计算', link: '/post/kaoyan/AdvancedMath/AdvancedMath_10' },
+            { text: '03 导数几何意义', link: '/post/kaoyan/AdvancedMath/AdvancedMath_11' },
+            { text: '04 微分的计算及几何意义', link: '/post/kaoyan/AdvancedMath/AdvancedMath_12' },
+            { text: '05 导数的微分学应用', link: '/post/kaoyan/AdvancedMath/AdvancedMath_13' },
           ]
         },
         {
           text: '第三章 不定积分',
           collapsed: true,
           items: [
-            { text: '01 不定积分定义与性质', link: '/AdvancedMath/AdvancedMath_14' },
-            { text: '02 不定积分的计算', link: '/AdvancedMath/AdvancedMath_15' },
+            { text: '01 不定积分定义与性质', link: '/post/kaoyan/AdvancedMath/AdvancedMath_14' },
+            { text: '02 不定积分的计算', link: '/post/kaoyan/AdvancedMath/AdvancedMath_15' },
           ]
         },
         {
           text: '第四章 定积分及其应用',
           collapsed: true,
           items: [
-            { text: '01 定积分的定义及性质', link: '/AdvancedMath/AdvancedMath_16' },
-            { text: '02 定积分计算', link: '/AdvancedMath/AdvancedMath_17' },
-            { text: '03 变限积分函数', link: '/AdvancedMath/AdvancedMath_18' },
-            { text: '04 反常积分', link: '/AdvancedMath/AdvancedMath_19' },
-            { text: '05 定积分的应用', link: '/AdvancedMath/AdvancedMath_20' },
+            { text: '01 定积分的定义及性质', link: '/post/kaoyan/AdvancedMath/AdvancedMath_16' },
+            { text: '02 定积分计算', link: '/post/kaoyan/AdvancedMath/AdvancedMath_17' },
+            { text: '03 变限积分函数', link: '/post/kaoyan/AdvancedMath/AdvancedMath_18' },
+            { text: '04 反常积分', link: '/post/kaoyan/AdvancedMath/AdvancedMath_19' },
+            { text: '05 定积分的应用', link: '/post/kaoyan/AdvancedMath/AdvancedMath_20' },
           ]
         },
         {
           text: '第五章 常微分方程',
           collapsed: true,
           items: [
-            { text: '01 微分方程基本概念', link: '/AdvancedMath/AdvancedMath_21' },
-            { text: '02 一阶微分方程及其解法', link: '/AdvancedMath/AdvancedMath_22' },
-            { text: '03 高阶微分方程', link: '/AdvancedMath/AdvancedMath_23' },
+            { text: '01 微分方程基本概念', link: '/post/kaoyan/AdvancedMath/AdvancedMath_21' },
+            { text: '02 一阶微分方程及其解法', link: '/post/kaoyan/AdvancedMath/AdvancedMath_22' },
+            { text: '03 高阶微分方程', link: '/post/kaoyan/AdvancedMath/AdvancedMath_23' },
           ]
         },
         {
           text: '第六章 中值定理',
           collapsed: true,
           items: [
-            { text: '01 闭区间连续函数的性质', link: '/AdvancedMath/AdvancedMath_24' },
-            { text: '02 积分中值定理', link: '/AdvancedMath/AdvancedMath_25' },
-            { text: '03 微分中值定理', link: '/AdvancedMath/AdvancedMath_26' },
+            { text: '01 闭区间连续函数的性质', link: '/post/kaoyan/AdvancedMath/AdvancedMath_24' },
+            { text: '02 积分中值定理', link: '/post/kaoyan/AdvancedMath/AdvancedMath_25' },
+            { text: '03 微分中值定理', link: '/post/kaoyan/AdvancedMath/AdvancedMath_26' },
           ]
         },
         {

@@ -29,3 +29,15 @@ body {
     font-family: "LXGW WenKai", "霞鹜文楷", "LXGW WenKai Screen", "霞鹜文楷 Screen", serif;
 }
 
+summary{
+  margin: 2px !important; 
+}
+
+.suojin{
+  margin-left: 25px;
+}
+
+.xuxianfg{
+    height:1px;
+    background:repeating-linear-gradient(90deg, #888, #888 4px, transparent 4px, transparent 8px);
+}
