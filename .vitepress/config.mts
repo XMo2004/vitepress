@@ -915,29 +915,29 @@ export default defineConfig({
               text: '通信基础',
               collapsed: true,
               items: [
-                { text: '00 概述', link: '/post/kaoyan/408/408_CN/01/408_CN_12' },
-                { text: '01 基本概念', link: '/post/kaoyan/408/408_CN/01/408_CN_13' },
-                { text: '02 信道的极限容量', link: '/post/kaoyan/408/408_CN/01/408_CN_14' },
-                { text: '03 编码与调制', link: '/post/kaoyan/408/408_CN/01/408_CN_15' },
-                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_16' },
+                { text: '00 概述', link: '/post/kaoyan/408/408_CN/02/408_CN_12' },
+                { text: '01 基本概念', link: '/post/kaoyan/408/408_CN/02/408_CN_13' },
+                { text: '02 信道的极限容量', link: '/post/kaoyan/408/408_CN/02/408_CN_14' },
+                { text: '03 编码与调制', link: '/post/kaoyan/408/408_CN/02/408_CN_15' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/02/408_CN_16' },
               ]
             },
             {
               text: '传输介质',
               collapsed: true,
               items: [
-                { text: '01 常见的传输介质', link: '/post/kaoyan/408/408_CN/01/408_CN_17' },
-                { text: '02 物理层接口的特性', link: '/post/kaoyan/408/408_CN/01/408_CN_18' },
-                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_19' },
+                { text: '01 常见的传输介质', link: '/post/kaoyan/408/408_CN/02/408_CN_17' },
+                { text: '02 物理层接口的特性', link: '/post/kaoyan/408/408_CN/02/408_CN_18' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/02/408_CN_19' },
               ]
             },
             {
               text: '物理层设备',
               collapsed: true,
               items: [
-                { text: '01 中继器', link: '/post/kaoyan/408/408_CN/01/408_CN_20' },
-                { text: '02 集线器', link: '/post/kaoyan/408/408_CN/01/408_CN_21' },
-                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_22' },
+                { text: '01 中继器', link: '/post/kaoyan/408/408_CN/02/408_CN_20' },
+                { text: '02 集线器', link: '/post/kaoyan/408/408_CN/02/408_CN_21' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/02/408_CN_22' },
               ]
             }
           ]
@@ -950,12 +950,12 @@ export default defineConfig({
               text: '功能',
               collapsed: true,
               items: [
-                { text: '00 概述', link: '/post/kaoyan/408/408_CN/01/408_CN_23' },
-                { text: '01 地位', link: '/post/kaoyan/408/408_CN/01/408_CN_24' },
-                { text: '02 封装成帧、透明传输', link: '/post/kaoyan/408/408_CN/01/408_CN_25' },
-                { text: '03 流量控制', link: '/post/kaoyan/408/408_CN/01/408_CN_26' },
-                { text: '04 差错检测', link: '/post/kaoyan/408/408_CN/01/408_CN_27' },
-                { text: '习题', link: '/post/kaoyan/408/408_CN/01/408_CN_28' },
+                { text: '00 概述', link: '/post/kaoyan/408/408_CN/03/408_CN_23' },
+                { text: '01 地位', link: '/post/kaoyan/408/408_CN/03/408_CN_24' },
+                { text: '02 封装成帧、透明传输', link: '/post/kaoyan/408/408_CN/03/408_CN_25' },
+                { text: '03 流量控制', link: '/post/kaoyan/408/408_CN/03/408_CN_26' },
+                { text: '04 差错检测', link: '/post/kaoyan/408/408_CN/03/408_CN_27' },
+                { text: '习题', link: '/post/kaoyan/408/408_CN/03/408_CN_28' },
               ]
             },
             {
