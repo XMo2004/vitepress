@@ -10,6 +10,7 @@ import LightRays from "./components/LightRays.vue"
 import Linkcard from "./components/Linkcard.vue"
 import ProgressBar from "./components/ProgressBar.vue"
 import QuizChoice from "./components/QuizChoice.vue"
+import QuizControls from "./components/QuizControls.vue"
 import TagCloud from "./components/TagCloud.vue"
 import TypeWriter from "./components/TypeWriter.vue"
 import MagicBento from './components/MagicBento.vue'
@@ -27,6 +28,7 @@ export default {
     // 注册全局组件
     app.component('Linkcard' , Linkcard)
     app.component('QuizChoice' , QuizChoice)
+    app.component('QuizControls' , QuizControls)
     app.component('ProgressBar' , ProgressBar)
     app.component('TagCloud' , TagCloud)
     app.component('Collapse' , Collapse)

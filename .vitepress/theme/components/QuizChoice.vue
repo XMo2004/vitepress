@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, inject, onMounted, watch, defineProps, withDefaults } from 'vue'
+import { ref, computed, inject, onMounted, onUnmounted, watch, defineProps, withDefaults } from 'vue'
 import MarkdownIt from 'markdown-it'
 import mathjax3 from 'markdown-it-mathjax3'
 
@@ -177,14 +177,45 @@ const initializeQuiz = () => {
   }
 }
 
-onMounted(() => {
-  initializeQuiz()
-})
-
 // 监听错题筛选状态变化
 watch(() => quizStatistics?.showWrongOnly?.value, () => {
   // 当筛选状态改变时，可以添加一些动画效果
 }, { immediate: true })
+
+// 事件处理函数
+const handleShowAllAnswers = () => {
+  if (!showResult.value && selectedOption.value === null) {
+    selectedOption.value = props.correctAnswer
+    showResult.value = true
+    showExplanation.value = true
+    saveQuizState()
+    
+    // 更新统计数据
+    if (quizStatistics) {
+      quizStatistics.updateQuizRecord(quizId.value, props.correctAnswer, props.correctAnswer)
+    }
+  }
+}
+
+const handleHideAllAnswers = () => {
+  if (showResult.value) {
+    resetQuiz()
+  }
+}
+
+onMounted(() => {
+  initializeQuiz()
+  
+  // 添加事件监听器
+  document.addEventListener('quiz-show-all-answers', handleShowAllAnswers)
+  document.addEventListener('quiz-hide-all-answers', handleHideAllAnswers)
+})
+
+onUnmounted(() => {
+  // 清理事件监听器
+  document.removeEventListener('quiz-show-all-answers', handleShowAllAnswers)
+  document.removeEventListener('quiz-hide-all-answers', handleHideAllAnswers)
+})
 </script>
 
 <template>
