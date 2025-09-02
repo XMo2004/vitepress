@@ -16,8 +16,6 @@ next: false
 
 <br />
 
-- [《马克思主义基本原理》](/post/kaoyan/zhengzhi/MY)
-
 - [《》](/post/kaoyan/English/waikan/20250901)
 
 - [真题解析](/post/kaoyan/English/exam/1997)
