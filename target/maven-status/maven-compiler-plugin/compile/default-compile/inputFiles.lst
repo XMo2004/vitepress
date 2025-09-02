@@ -1,0 +1,14 @@
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/QuizManagementApplication.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/config/SwaggerConfig.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/controller/QuizQuestionController.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/dto/QuizQuestionDTO.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/entity/QuizOption.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/entity/QuizQuestion.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/entity/QuizTag.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/exception/BusinessException.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/exception/GlobalExceptionHandler.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/exception/ResourceNotFoundException.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/repository/QuizOptionRepository.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/repository/QuizQuestionRepository.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/repository/QuizTagRepository.java
+/Users/xmo/Documents/CodeDocuments/VitePress/src/main/java/com/quiz/service/QuizQuestionService.java

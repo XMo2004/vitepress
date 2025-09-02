@@ -41,3 +41,7 @@ summary{
     height:1px;
     background:repeating-linear-gradient(90deg, #888, #888 4px, transparent 4px, transparent 8px);
 }
+
+.center{
+  text-align: center;
+}

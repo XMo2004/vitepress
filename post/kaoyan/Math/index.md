@@ -13,5 +13,9 @@ next: false
 tags: ["高等数学","线性代数","概率论与数理统计"]
 ---
 
-考研数学笔记导航
+# 考研数学
+
+<br />
+
+- [高等数学](/post/kaoyan/Math/AdvancedMath/AdvancedMath_1)
 

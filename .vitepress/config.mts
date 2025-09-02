@@ -82,8 +82,8 @@ export default defineConfig({
       {
         text: '考研笔记',
         items: [
-          { text: '考研数学', link: '/post/kaoyan/AdvancedMath/AdvancedMath_1' },
-          { text: '考研英语', link: '···' },
+          { text: '考研数学', link: '/post/kaoyan/Math/index' },
+          { text: '考研英语', link: '/post/kaoyan/English/index' },
           { text: '考研政治', link: '···' },
         ]
       },
@@ -488,10 +488,10 @@ export default defineConfig({
               text: '数据结构的基本概念',
               collapsed: true,
               items: [
-                { text: '00 综述', link: '/post/408/408_DS/01/408_DS_0' },
-                { text: '01 基本概念和术语', link: '/post/408/408_DS/01/408_DS_1' },
-                { text: '02 数据结构三要素', link: '/post/408/408_DS/01/408_DS_2' },
-                { text: '习题', link: '/post/408/408_DS/01/408_DS_3' },
+                { text: '00 综述', link: '/post/kaoyan/408/408_DS/01/408_DS_0' },
+                { text: '01 基本概念和术语', link: '/post/kaoyan/408/408_DS/01/408_DS_1' },
+                { text: '02 数据结构三要素', link: '/post/kaoyan/408/408_DS/01/408_DS_2' },
+                { text: '习题', link: '/post/kaoyan/408/408_DS/01/408_DS_3' },
               ]
             },
             {
@@ -1111,19 +1111,20 @@ export default defineConfig({
             ]
           },
         ],
-      '/post/kaoyan/AdvancedMath/': [
+      '/post/kaoyan/Math/AdvancedMath/': [
         {
           text: '第一章 函数、极限与连续',
           collapsed: true,
           items: [
-            { text: '01 微积分预备知识', link: '/post/kaoyan/AdvancedMath/AdvancedMath_1' },
-            { text: '02 函数极限定义及性质', link: '/post/kaoyan/AdvancedMath/AdvancedMath_2' },
-            { text: '03 无穷小量及无穷大量', link: '/post/kaoyan/AdvancedMath/AdvancedMath_3' },
-            { text: '04 泰勒公式', link: '/post/kaoyan/AdvancedMath/AdvancedMath_4' },
-            { text: '05 极限四则运算', link: '/post/kaoyan/AdvancedMath/AdvancedMath_5' },
-            { text: '06 函数极限运算', link: '/post/kaoyan/AdvancedMath/AdvancedMath_6' },
-            { text: '07 数列极限', link: '/post/kaoyan/AdvancedMath/AdvancedMath_7' },
-            { text: '08 连续与间断', link: '/post/kaoyan/AdvancedMath/AdvancedMath_8' },
+            { text: '01 微积分预备知识', link: '/post/kaoyan/Math/AdvancedMath/AdvancedMath_1' },
+            { text: '02 函数极限定义及性质', link: '/post/kaoyan/Math/AdvancedMath/AdvancedMath_2' },
+            { text: '03 无穷小量及无穷大量', link: '/post/kaoyan/Math/AdvancedMath/AdvancedMath_3' },
+            { text: '04 泰勒公式', link: '/post/kaoyan/Math/AdvancedMath/AdvancedMath_4' },
+            { text: '05 极限四则运算', link: '/post/kaoyan/Math/AdvancedMath/AdvancedMath_5' },
+            { text: '06 函数极限运算', link: '/post/kaoyan/Math/AdvancedMath/AdvancedMath_6' },
+            { text: '07 数列极限', link: '/post/kaoyan/Math/AdvancedMath/AdvancedMath_7' },
+            { text: '08 连续与间断', link: '/post/kaoyan/Math/AdvancedMath/AdvancedMath_8' },
+            { text: '本章题型整理', link: '/post/kaoyan/Math/AdvancedMath/AdvancedMath_47' },
           ]
         },
         {
