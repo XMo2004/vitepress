@@ -118,7 +118,185 @@ D． 4
   对于（4），若取 $F(x)=\begin{aligned}x^{3}\end{aligned}$ 是单增函数，但 $F^{\prime}(x)=f(x)=\begin{aligned}3x^{2}\end{aligned}$ 不是单调函数，（4）错误。
   
   应选 A。
-  
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 2 </span>
+
+---
+
+设 $f(x)$ 连续，则下列函数中必为偶函数的是 __________ 。
+
+<div class="suojin">
+
+<br />
+
+A． $\begin{aligned}\int_{0}^{x} \frac{\mathrm{e}^{t}-1}{\mathrm{e}^{t}+1} \cdot \ln \left(t+\sqrt{1+t^{2}}\right) \mathrm{d} t\end{aligned}$
+
+<br />
+
+B． $\begin{aligned}\int_{0}^{x} t\Big[f(t)-f(-t)\Big] \mathrm{d} t\end{aligned}$
+
+<br />
+
+C． $\begin{aligned}\int_{0}^{x} \mathrm{~d} t \int_{0}^{t} \frac{\arctan u}{1+u^{4}} \mathrm{~d} u\end{aligned}$
+
+<br />
+
+D． $\begin{aligned}\int_{1}^{x} \mathrm{~d} t \int_{0}^{t} \frac{\sin ^{2} u}{1+u^{4}} \mathrm{~d} u\end{aligned}$
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">D</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 3 </span>
+
+---
+
+设奇函数 $f(x)$ 在 $(-\infty,+\infty)$ 上有连续导数，$a$ 为任意常数，则 __________ 。
+
+<div class="suojin">
+
+<br />
+
+A． $\begin{aligned}\int_{0}^{x}\left[\cos f(t)+f^{\prime}(t)\right] \mathrm{d} t\end{aligned}$ 必为奇函数
+
+<br />
+
+B． $\begin{aligned}\int_{a}^{x}\left[\cos f(t)+f^{\prime}(t)\right] \mathrm{d} t\end{aligned}$ 必为奇函数
+
+<br />
+
+C． $\begin{aligned}\int_{0}^{x}\left[\sin f^{\prime}(t)+f(t)\right] \mathrm{d} t\end{aligned}$ 必为偶函数
+
+<br />
+
+D． $\begin{aligned}\int_{a}^{x}\left[\sin f^{\prime}(t)+f^{\prime}(t)\right] \mathrm{d} t\end{aligned}$ 必为奇函数
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">A</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  （解析内容待补充）
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 4 </span>
+
+---
+
+设函数 $f(x)=\begin{aligned}\int_{0}^{\sin x} \sin t^{3} \mathrm{~d} t\end{aligned}, g(x)=\begin{aligned}\int_{0}^{x} f(t) \mathrm{d} t\end{aligned}$ ，则 __________ 。
+
+<div class="suojin">
+
+<br />
+
+A．$f(x)$ 为奇函数，$g(x)$ 为奇函数
+
+B．$f(x)$ 为奇函数，$g(x)$ 为偶函数
+
+C．$f(x)$ 为偶函数，$g(x)$ 为偶函数
+
+D．$f(x)$ 为偶函数，$g(x)$ 为奇函数
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">B</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  （解析内容待补充）
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">刻意练习 </span>
+
+---
+
+设函数 $f(x)$ 在 $(-\infty,+\infty)$ 上有定义，且对于任意的 $x, y$ 恒有 $f(x+y)=f(x)+f(y)$ 。若 $a>0$ ，且 $a \neq 1$ ，则 __________ 。
+
+<div class="suojin">
+
+<br />
+
+A． $\begin{aligned}\int_{1}^{x}\left(\frac{1}{a^{t}-1}+\frac{1}{2}\right) f(t) \mathrm{d} t\end{aligned}$ 为奇函数
+
+<br />
+
+B． $\begin{aligned}\int_{1}^{x}\left(\frac{1}{a^{t}-1}+\frac{1}{2}\right) f(t) \mathrm{d} t\end{aligned}$ 为偶函数
+
+<br />
+
+C． $\begin{aligned}\int_{0}^{x} t\left(\frac{1}{a^{t}-1}+\frac{1}{2}\right) f(t) \mathrm{d} t\end{aligned}$ 为奇函数
+
+<br />
+
+D． $\begin{aligned}\int_{0}^{x} t\left(\frac{1}{a^{t}-1}+\frac{1}{2}\right) f(t) \mathrm{d} t\end{aligned}$ 为偶函数
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">D</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  （解析内容待补充）
   </div>
 </details>
 
@@ -172,6 +350,96 @@ D． 4
 
 :::
 
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 5 </span>
+
+---
+
+当 $x \rightarrow 0^{+}$ 时，下列无穷小量中阶数最高的是 __________ 。
+
+<div class="suojin">
+
+<br />
+
+A． $\begin{aligned}\ln \cos x-\sqrt[3]{\cos x}+1\end{aligned}$
+
+<br />
+
+B． $\begin{aligned}\cos \sqrt{x} \cdot \sqrt{1-\cos \sqrt{x}}\end{aligned}$
+
+<br />
+
+C． $\begin{aligned}x-\ln (1+x)-\frac{1}{2} x \sin x\end{aligned}$
+
+<br />
+
+D． $\begin{aligned}x-\ln (1+\sin x)\end{aligned}$
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">D</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 6 </span> <span class="red-bold">（2020 年真题）</span>
+
+---
+
+当 $x \rightarrow 0^{+}$ 时，下列无穷小量中阶数最高的是 __________ 。
+
+<div class="suojin">
+
+<br />
+
+A． $\begin{aligned}\int_{0}^{x}\left(\mathrm{e}^{t^{2}}-1\right) \mathrm{d} t\end{aligned}$
+
+<br />
+
+B． $\begin{aligned}\int_{0}^{x} \ln \left(1+\sqrt{t^{3}}\right) \mathrm{d} t\end{aligned}$
+
+<br />
+
+C． $\begin{aligned}\int_{0}^{\sin x} \sin t^{2} \mathrm{~d} t\end{aligned}$
+
+<br />
+
+D． $\begin{aligned}\int_{0}^{1-\cos x} \sqrt{\sin ^{3} t} \mathrm{~d} t\end{aligned}$
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">D</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  </div>
+</details>
+
+</div>
+
 <div class="center">
 
 ### <span class="blue-bold">题型2 乘法中泰勒展开阶数的确定方法</span>
@@ -183,6 +451,140 @@ D． 4
 切勿缺项，展开技巧为"头看尾、尾看头"，可参考下列例题。
 
 :::
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 7 </span>
+
+---
+
+试确定常数 $A, B, C$ 的值，使得：
+
+$$
+\begin{aligned}\mathrm{e}^{x}\left(1+B x+C x^{2}\right)=1+A x+o\left(x^{3}\right),\end{aligned}
+$$
+
+其中 $o\left(x^{3}\right)$ 是当 $x \rightarrow 0$ 时比 $x^{3}$ 高阶的无穷小。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <div class="bold suojin">
+  
+  </div>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 8 </span>
+
+---
+
+（2021 年真题）设函数 $f(x)=\begin{aligned}\frac{\sin x}{1+x^{2}}\end{aligned}$ 在 $x=0$ 处的 3 次泰勒多项式为 $a x+ b x^{2}+c x^{3}$ ，则 __________ 。
+
+<div class="suojin">
+
+<br />
+
+A． $a=1, b=0, c=-\begin{aligned}\frac{7}{6}\end{aligned}$
+
+<br />
+
+B． $a=1, b=0, c=\begin{aligned}\frac{7}{6}\end{aligned}$
+
+<br />
+
+C． $a=-1, b=-1, c=-\begin{aligned}\frac{7}{6}\end{aligned}$
+
+<br />
+
+D． $a=-1, b=-1, c=\begin{aligned}\frac{7}{6}\end{aligned}$
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">A</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">刻意练习 1 </span>
+
+---
+
+当 $x \rightarrow 0$ 时，函数 $\begin{aligned}f(x)=\mathrm{e}^{x} \ln (1+x)-x-\frac{1}{2} x^{2}\end{aligned}$ 与 $\begin{aligned}g(x)=k(1-\sqrt{\cos x}) \ln \left(x+\sqrt{1+x^{2}}\right)\end{aligned}$ 是等价无穷小，则 $k=$ __________ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$\frac{1}{3}$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">刻意练习 2 </span>
+
+---
+
+求极限 
+
+<br/>
+
+$\begin{aligned}\lim _{x \rightarrow 0} \frac{\ln (1+x) \ln (1-x)-\ln \left(1-x^{2}\right)}{x^{4}}\end{aligned}$
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$-\frac{1}{12}$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  </div>
+</details>
+
+</div>
 
 ## 3 函数极限计算
 
@@ -246,6 +648,284 @@ D． 4
 
 :::
 
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 9 </span>
+
+---
+
+求极限：$\begin{aligned}\lim_{x \rightarrow 0} \frac{(1+x)^{\frac{2}{x}}-\mathrm{e}^{2}[1+\ln (1+x)]}{x}\end{aligned}$
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 10 </span>
+
+---
+
+求极限：$\begin{aligned}\lim_{x \rightarrow 0} \frac{1-\cos x \sqrt{\cos 2 x} \sqrt[3]{\cos 3 x}}{x^{2}}\end{aligned}$
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">刻意练习 </span>
+
+---
+
+求极限：$\begin{aligned}\lim_{x \rightarrow 0} \frac{(1+x)^{x}-\cos \frac{x}{2}}{\left(\sin x-\sin \frac{x}{2}\right) \sin x}\end{aligned}$
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 11 </span>
+
+---
+
+求极限：$\begin{aligned}\lim_{x \rightarrow+\infty} \frac{\sqrt{x^{2}+x+1}\Big[x-\ln \left(\mathrm{e}^{x}+x\right)\Big]}{x}\end{aligned}$
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 12 </span>
+
+---
+
+求极限：$\begin{aligned}\lim_{x \rightarrow+\infty}\left(\sqrt[6]{x^{6}+x^{5}}-\sqrt[6]{x^{6}-x^{5}}\right)\end{aligned}$
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 13 </span>
+
+---
+
+求极限：$\begin{aligned}\lim_{x \rightarrow 0}\left(\frac{a_{1}^{x}+a_{2}^{x}+\cdots+a_{n}^{x}}{n}\right)^{\frac{n}{x}}\end{aligned}$ ，其中 $a_{i}>0, i=1,2,3, \cdots, n$ 。
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 14 </span>
+
+---
+
+设函数 $f(x)$ 在 $x=0$ 的某去心邻域内有定义，且满足：
+
+$
+\begin{aligned}
+\lim_{x \rightarrow 0}\left[\cos x+\frac{f(x)}{x}\right]^{\frac{1}{x^{2}}}=\mathrm{e} \lim_{x \rightarrow \infty}\left(x+\sqrt{1+x^{2}}\right)^{\frac{2}{x}}
+\end{aligned}
+$
+，求 $\begin{aligned}\lim_{x \rightarrow 0} \frac{f(x)}{x^{3}}\end{aligned}$ 
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 15 </span>
+
+---
+
+求极限：$\begin{aligned}\lim_{x \rightarrow+\infty}\left(\frac{\pi}{2}-\arctan x\right)^{\frac{1}{\ln x}}\end{aligned}$
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 16 </span> <span class="red-bold">（2010 年数学三）</span>
+
+---
+
+求极限：$\begin{aligned}\lim_{x \rightarrow+\infty}\left(x^{\frac{1}{x}}-1\right)^{\frac{1}{\ln x}}\end{aligned}$ 。
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
 
 <div class="center">
 
