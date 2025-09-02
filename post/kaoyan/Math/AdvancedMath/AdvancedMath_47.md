@@ -58,6 +58,9 @@ next: false
 
 :::
 
+
+
+
 ## 2 无穷小量及其比阶
 
 <div class="center">
@@ -382,11 +385,48 @@ $$\lim_{x \rightarrow x_{0}} f(x)=A \Leftrightarrow \forall \ \varepsilon>0, \ex
 
 </div>
 
+
 <div class="center">
 
 ### <span class="blue-bold">题型2 复合型数列 $\{f(x_n)\}$ 与 数列 $\{x_n\}$ 之间的敛散性关系</span>
 
 </div>
+
+::: info <span></span>
+
+<span class="bold">性质 1：</span>
+
+设函数 $f(x)$ 在区间 $(a, b)$ 上连续，若数列 $\left\{x_{n}\right\}$ 收敛于 $(a, b)$ 内一点 $A$ ，则:
+
+数列 $\left\{f\left(x_{n}\right)\right\}$ 收敛于 $f(A)$ ，即：
+
+<span class="red-bold">“若 $\begin{aligned}\lim _{n \rightarrow \infty} x_{n}=A\end{aligned}$ ，则 $\begin{aligned}\lim _{n \rightarrow \infty} f\left(x_{n}\right)=f(A)\end{aligned}$”</span>
+
+---
+
+<span class="bold">性质 2：</span>
+
+设函数 $f(x)$ 在区间 $(a, b)$ 上单调连续，若数列 $\left\{f\left(x_{n}\right)\right\}$ 收敛于 $f(x)$ 值域内一点 $f(A)$ ，则数列 $\left\{x_{n}\right\}$ 收敛于 $A$ ，即：
+
+<span class="red-bold">“若 $\begin{aligned}\lim _{n \rightarrow \infty} f\left(x_{n}\right)=f(A)\end{aligned}$ ，则 $\begin{aligned}\lim _{n \rightarrow \infty} x_{n}=A\end{aligned}$”</span>
+
+<br />
+<div style="display: flex; flex-direction: column; align-items: center;">
+<img src="/img/png/Math/02.png" alt="函数极限定义的理解" width="230px" style="border-radius: 10px;">
+</div>
+<br />
+
+---
+
+<span class="red-bold">【注】</span>需注意以下几点：
+
+（1）设函数 $f(x)$ 在区间 $(a, b)$ 上连续但不单调，若数列 $\left\{f\left(x_{n}\right)\right\}$ 收敛于 $f(x)$ 值域内一点 $f(A)$ ，但数列 $\left\{x_{n}\right\}$ 不一定收敛。
+
+（2）设函数 $f(x)$ 在区间 $(a, b)$ 上单调，若数列 $\left\{x_{n}\right\}$ 收敛于 $(a, b)$ 内一点 $x_{0}$ ，但数列 $\left\{f\left(x_{n}\right)\right\}$ 未必收敛。
+
+（3）设函数 $f(x)$ 单调，若数列 $\left\{f\left(x_{n}\right)\right\}$ 收敛，但数列 $\left\{x_{n}\right\}$ 未必收敛。
+
+:::
 
 ## 6 数列极限计算
 
@@ -396,11 +436,56 @@ $$\lim_{x \rightarrow x_{0}} f(x)=A \Leftrightarrow \forall \ \varepsilon>0, \ex
 
 </div>
 
+::: info <span></span>
+
+<span class="red-bold">【考】</span><span class="bold">归结原则（海涅定理）</span>
+
+函数极限 $\begin{aligned}\lim _{x \rightarrow x_{0}} f(x)=A\end{aligned}$ 的充分必要条件是，对于任一收敛于 $x_{0}$ 的数列 $\left\{x_{n}\right\}$ ，且 $x_{n} \neq x_{0}$ ，其所对应的数列 $f\left(x_{n}\right)$ ，有 $\begin{aligned}\lim _{n \rightarrow \infty} f\left(x_{n}\right)=A\end{aligned}$ 。
+
+---
+
+<span class="red-bold">【注】</span>利用归结原则，可将数列极限转化为函数极限处理，其原理为：
+
+$$\begin{aligned}\lim _{x \rightarrow+\infty} f(x)=A \Rightarrow \lim _{n \rightarrow \infty} f(n)=A\end{aligned}$$
+
+:::
+
 <div class="center">
 
 ### <span class="blue-bold">题型2 $n$ 项和式数列极限</span>
 
 </div>
+
+::: info <span></span>
+
+<span class="bold">1. 利用定积分定义（分割、近似、求和、取极限）</span>
+
+<span class="bold">（1）一般形式</span>
+
+- 右端点：$\begin{aligned}\int_{a}^{b} f(x) \mathrm{d} x=\lim _{n \rightarrow \infty} \sum_{k=1}^{n} f\left[a+\frac{k}{n}(b-a)\right] \cdot \frac{b-a}{n}\end{aligned}$
+
+- 左端点：$\begin{aligned}\int_{a}^{b} f(x) \mathrm{d} x=\lim _{n \rightarrow \infty} \sum_{k=1}^{n} f\left[a+\frac{k-1}{n}(b-a)\right] \cdot \frac{b-a}{n}\end{aligned}$
+
+<span class="bold">（2）特殊形式（考查 $[0,1]$ 的区间）</span>
+
+- 右端点：$\begin{aligned}\int_{0}^{1} f(x) \mathrm{d} x=\lim _{n \rightarrow \infty} \frac{1}{n} \sum_{k=1}^{n} f\left(\frac{k}{n}\right)\end{aligned}$
+
+- 左端点：$\begin{aligned}\int_{0}^{1} f(x) \mathrm{d} x=\lim _{n \rightarrow \infty} \frac{1}{n} \sum_{k=1}^{n} f\left(\frac{k-1}{n}\right)\end{aligned}$
+
+- 中点：$\begin{aligned}\int_{0}^{1} f(x) \mathrm{d} x=\lim _{n \rightarrow \infty} \frac{1}{n} \sum_{k=1}^{n} f\left(\frac{2 k-1}{2 n}\right)\end{aligned}$
+
+---
+
+<span class="bold">2. 利用夹逼准则</span>
+
+若存在 $N>0$ ，当 $n>N$ 时，满足
+
+（1）$y_{n} \leqslant x_{n} \leqslant z_{n}$ ，
+
+（2）$\begin{aligned}\lim _{n \rightarrow \infty} y_{n}=a\end{aligned}$ 且 $\begin{aligned}\lim _{n \rightarrow \infty} z_{n}=a\end{aligned}$ ，
+
+则数列 $\left\{x_{n}\right\}$ 极限存在，且 $\begin{aligned}\lim _{n \rightarrow \infty} x_{n}=a\end{aligned}$ 。
+:::
 
 <div class="center">
 
@@ -408,17 +493,118 @@ $$\lim_{x \rightarrow x_{0}} f(x)=A \Leftrightarrow \forall \ \varepsilon>0, \ex
 
 </div>
 
+::: info <span></span>
+
+<span class="bold">取对数</span>（将 $n$ 项积问题转化为 $n$ 项和问题），再利用题型 2 的求解方法进行处理。
+
+:::
+
 <div class="center">
 
 ### <span class="blue-bold">题型4 利用夹逼准则求数列极限</span>
 
 </div>
 
+::: info <span></span>
+
+<span class="bold">定理</span> 若存在 $N>0$ ，当 $n>N$ 时，满足：
+
+（1）$y_{n} \leqslant x_{n} \leqslant z_{n}$ ，
+
+（2） $\begin{aligned}\lim _{n \rightarrow \infty} y_{n}=\lim _{n \rightarrow \infty} z_{n}=a\end{aligned}$ ，
+则 $\begin{aligned}\lim _{n \rightarrow \infty} x_{n}=a\end{aligned}$ 。
+
+---
+
+<span class="red-bold">【注】</span>上式中（2）若改为 $\begin{aligned}\lim _{n\rightarrow \infty}\left(z_{n}-y_{n}\right)=0\end{aligned}$ ，则无法确定 $\begin{aligned}\lim _{n \rightarrow \infty} x_{n}\end{aligned}$ 的存在性。
+
+:::
+
 <div class="center">
 
 ### <span class="blue-bold">题型5 利用单调有界准则求数列极限</span>
 
 </div>
+
+::: info <span></span>
+
+<span class="bold">1. 单调有界准则的内容</span>
+
+（1）单调增且有上界的数列必有极限；
+
+（2）单调减且有下界的数列必有极限。
+
+---
+
+<span class="bold">2. 常考题型及求解方法</span>
+
+（1）考题形式：
+
+已知数列 $\left\{x_{n}\right\}$ 有递推公式 $x_{n+1}=f\left(x_{n}\right)$ ，证明 $\left\{x_{n}\right\}$ 极限存在并求极限。
+
+该问题通常利用<span class="red-bold">单调有界准则</span>求解，即先证明该数列单调增加有上界（或单调减小有下界），可知极限 $\begin{aligned}\lim_{n \rightarrow \infty} x_{n}\end{aligned}=A$ 存在，再对递推公式两边同取极限，得到极限值 $A$ 满足的方程，解方程即可求得极限结果。
+
+但是，在实际问题求解中，单调性和有界性的判定是一大难点，这里总结了单调性和有界性的常用解法。
+
+<br />
+
+（2）有界性证明
+
+常用方法：先求极限再用数学归纳法证明；利用重点不等式放缩，常见的不等式有：
+
+（1） $\mathrm{e}^{x}-1 \geqslant x(x \in R)$ ，当且仅当 $x=0$ 时取等号；
+
+（2）$x \geqslant \ln (1+x)(x>-1)$ ，当且仅当 $x=0$ 时取等号；
+
+（3）当 $0<x<\begin{aligned}\frac{\pi}{2}\end{aligned}$ 时， $\tan x>x>\sin x$ ；
+
+（4）当 $x>0$ 时，$x>\sin x$ ；
+
+（5）当 $x>0$ 时，$\begin{aligned}\frac{1}{x+1}\end{aligned}<\ln \left(1+\begin{aligned}\frac{1}{x}\end{aligned}\right)<\begin{aligned}\frac{1}{x}\end{aligned}$ ；
+
+（6）当 $x>0$ 时，$\begin{aligned}\frac{x}{x+1}\end{aligned}<\ln (1+x)<x$。
+
+<br />
+
+（3）单调性证明
+
+法一：作差与 0 比
+
+法二：作比 与 1比
+
+法三：利用导数判定单调性
+
+已知 $x_{n+1}=f\left(x_{n}\right)$ ，则：
+
+（1）若 $f^{\prime}(x)>0$ ，
+
+<span class="suojin"><span class="suojin">当 $x_{1}<x_{2}$ 时，$\left\{x_{n}\right\}$ 单调递增；当 $x_{1}>x_{2}$ 时，$\left\{x_{n}\right\}$ 单调递减。</span></span>
+
+（2）若 $f^{\prime}(x)<0$ 时，$\left\{x_{n}\right\}$ 无单调性。
+
+---
+
+<span class="bold">3. 柯西收敛准则</span>
+
+若数列无单调性时，将无法利用“单调有界准则”证明极限存在，此时可使用柯西收敛准则的方法，即证明 $\left|x_{n}-A\right| \rightarrow 0(n \rightarrow \infty)$ ，具体如下：
+
+- 题设：已知 $x_{n+1}=f\left(x_{n}\right)$ ，证明 $\left\{x_{n}\right\}$ 极限存在，并求极限。
+
+- 核心：柯西收敛准则的核心在于求解出 $\left|f^{\prime}(\xi)\right| \leqslant k<1$。
+
+- 步骤：设 $\lim_{n \rightarrow \infty} x_{n}=A$ ，则 $A=f(A)$ ，于是
+
+$$
+\begin{aligned}
+\Big|x_{n}-A\Big| & = \Big|f\left(x_{n-1}\right)-f(A)\Big| \\
+& = \Big|f^{\prime}(\xi)\Big|\Big|x_{n-1}-A\Big| \\
+& \leqslant k\Big|x_{n-1}-A\Big| \\
+& \leqslant k^{2}\Big|x_{n-2}-A\Big| \\
+& \leqslant \cdots \leqslant k^{n-1}\Big|x_{1}-A\Big| \rightarrow 0(n \rightarrow \infty)
+\end{aligned}
+$$
+
+:::
 
 ## 7 连续与间断
 
@@ -429,15 +615,165 @@ $$\lim_{x \rightarrow x_{0}} f(x)=A \Leftrightarrow \forall \ \varepsilon>0, \ex
 
 </div>
 
+::: info <span></span>
+
+<span class="bold">1．连续的判定方法</span>
+
+（1）方法一：初等函数在其有定义的区间上连续。
+
+（2）方法二：利用连续的定义
+
+- 不需分左右极限时：$\begin{aligned}\lim_{x \rightarrow x_{0}} f(x)=f\left(x_{0}\right)\end{aligned}$；
+
+- 需要分左右极限时：$\begin{aligned}\lim_{x \rightarrow x_{0}^{-}} f(x)=\lim_{x \rightarrow x_{0}^{+}} f(x)=f\left(x_{0}\right)\end{aligned}$。
+
+---
+
+<span class="red-bold">【注】</span>函数 $f(x)$ 在点 $x_{0}$ 处连续必须同时满足以下三个条件：
+
+<div class="suojin">
+
+- $f(x)$ 在 $U\left(x_{0}, \delta\right)$ 内有定义；
+
+- 极限 $\begin{aligned}\lim_{x \rightarrow x_{0}} \end{aligned}f(x)$ 存在；
+
+- $\begin{aligned}\lim_{x \rightarrow x_{0}} \end{aligned}f(x)=f\left(x_{0}\right)$。
+
+</div>
+
+---
+
+<span class="bold">2．连续函数的保号性（可根据图像理解）</span>
+
+设 $f(x)$ 在 $x=x_{0}$ 处连续，
+
+（1）若 $f\left(x_{0}\right)>0$，则在 $x_{0}$ 的某邻域内 $f(x)>0$；
+
+（2）若 $f\left(x_{0}\right)<0$，则在 $x_{0}$ 的某邻域内 $f(x)<0$。
+
+---
+
+<span class="bold">3．一个易错点</span>
+
+若 $f(x)$ 在 $x=x_{0}$ 处连续，则在 $x=x_{0}$ 的某个邻域内 $f(x)$ 也连续，注意！这句话是错误的。
+
+【分析】狄利克雷函数
+$$
+D(x)=\begin{cases} 
+1, & x \text{ 为有理数，} \\ 
+0, & x \text{ 为无理数。}
+\end{cases}
+$$
+
+取函数 $f(x)=x \cdot D(x)$，该函数在 $x=0$ 处连续，但在 $x=0$ 的任一邻域内均不连续。
+
+显然，可以得出关于可导性的类似结论：若 $f(x)$ 在 $x=x_{0}$ 处可导，无法推出在 $x=x_{0}$ 的某个邻域内 $f(x)$ 也可导。
+
+---
+
+<span class="bold">4．间断点分类</span>
+
+- 第一类间断点：$\begin{aligned}\lim_{x \rightarrow x_{0}^{-}} \end{aligned}f(x)$ 与 $\begin{aligned}\lim_{x \rightarrow x_{0}^{+}} \end{aligned}f(x)$ 均存在。
+
+  - 可去间断点：$\begin{aligned}\lim_{x \rightarrow x_{0}} \end{aligned}f(x) \neq f\left(x_{0}\right)$；
+
+  - 跳跃间断点：$\begin{aligned}\lim_{x \rightarrow x_{0}^{-}} \end{aligned}f(x) \neq \begin{aligned}\lim_{x \rightarrow x_{0}^{+}} \end{aligned}f(x)$。
+
+- 第二类间断点：$\begin{aligned}\lim_{x \rightarrow x_{0}^{-}} \end{aligned}f(x)$ 与 $\begin{aligned}\lim_{x \rightarrow x_{0}^{+}} \end{aligned}f(x)$ 至少有一个不存在。
+
+  - 无穷间断点：$\begin{aligned}\lim_{x \rightarrow x_{0}^{-}} \end{aligned}f(x)$、$\begin{aligned}\lim_{x \rightarrow x_{0}^{+}} \end{aligned}f(x)$ 至少有一个是 $\infty$；
+
+  - 振荡间断点：$\begin{aligned}\lim_{x \rightarrow x_{0}^{-}} \end{aligned}f(x)$、$\begin{aligned}\lim_{x \rightarrow x_{0}^{+}} \end{aligned}f(x)$ 至少有一个是振荡的不存在。
+
+---
+
+<span class="bold">5．间断点判定</span>
+
+（1）找出函数的无定义点，及分段函数的分段点。
+
+（2）分别求这些点处的极限，并作出判定。
+
+:::
+
 <div class="center">
 
 ### <span class="blue-bold">题型2 涉及极限式函数的问题</span>
 
 </div>
 
+::: info <span></span>
+
+<span class="bold">1. 常见的极限式函数</span>
+
+$$
+F(x) = \begin{aligned}\lim _{n \rightarrow \infty} f(n, x)\end{aligned}, \quad F(x) = \begin{aligned}\lim _{t \rightarrow t_{0}} f(x, t)\end{aligned}
+$$
+
+<span class="red-bold">【注】</span>涉及极限式函数的问题，一般先求极限，确定具体的函数。
+
+---
+
+<span class="bold">2. 常用结论</span>
+
+（1） 
+
+<div class="suojin">
+
+<div class="suojin">
+
+$\begin{aligned}\lim _{n \rightarrow \infty} q^{n} = \left\{\begin{array}{ll}\infty, & |q|>1 \\ 0, & |q|<1 \\ 1, & q=1 \\ \text{ 不存在，} & q=-1\end{array}\right.\end{aligned}$
+
+<br />
+
+$
+\begin{aligned}\lim _{n \rightarrow \infty} x^{n} = \left\{\begin{array}{ll}
+\infty, & |x|>1 \\
+0, & |x|<1 \\
+1, & x=1 \\
+\text{ 不存在, } & x=-1
+\end{array}\right.\end{aligned}
+$
+
+</div>
+
+</div>
+
+<br />
+
+（2） $\begin{aligned}\lim _{n \rightarrow \infty} \mathrm{e}^{n x} = \left\{\begin{array}{ll}+\infty, & x>0 \\ 1, & x=0 \\ 0, & x<0\end{array}\right.\end{aligned}$
+
+:::
+
 <div class="center">
 
 ### <span class="blue-bold">题型3 连续函数的性质</span>
 
 </div>
+
+::: info <span></span>
+
+<span class="bold">1. 四则运算性质</span>
+
+设函数 $f(x)$, $g(x)$ 在点 $x_{0}$ 处连续，则：
+
+$$
+\begin{aligned}f(x) \pm g(x)\end{aligned},\ \begin{aligned}f(x) \cdot g(x)\end{aligned},\ \begin{aligned}\frac{f(x)}{g(x)}\end{aligned}\ \Big[g\left(x_{0}\right) \neq 0\Big]
+$$
+
+在点 $x_{0}$ 处也连续。
+
+---
+
+<span class="bold">2. 复合函数的连续性</span>
+
+设函数 $y=f[g(x)]$ 是由函数 $y=f(u)$ 与 $u=g(x)$ 复合而成，若 $u=g(x)$ 在 $x=x_{0}$ 处连续，且 $g\left(x_{0}\right)=u_{0}$，而 $y=f(u)$ 在 $u=u_{0}$ 处连续，则复合函数 $y=f[g(x)]$ 在 $x=x_{0}$ 处连续。
+
+---
+
+<span class="bold">3. 反函数的连续性</span>
+
+设有函数 $y=f(x),\ x \in D$。如果函数 $f(x)$ 是在 $D$ 上单调增加（或单调减少）的连续函数，则它的反函数 $x=f^{-1}(y)$ 在 $D_{f^{-1}}$ 上也是单调增加（或减少）的连续函数，其中 $D_{f^{-1}}=\{y \mid y=f(x),\ x \in D\}$。
+
+
+:::
 
