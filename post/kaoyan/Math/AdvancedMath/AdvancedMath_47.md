@@ -58,8 +58,73 @@ next: false
 
 :::
 
+<br />
 
+<div class="kuang">
 
+<span class="bold heiti green-bold">强化 1 </span>
+
+---
+
+设 $F(x)$ 是连续函数 $f(x)$ 的一个原函数，“$M \Leftrightarrow N$” 表示 “ $M$ 的充分必要条件是 $N$ ”，给出以下四个结论：
+
+（1）$F(x)$ 是偶函数 $\Leftrightarrow f(x)$ 是奇函数
+
+（2）$F(x)$ 是奇函数 $\Leftrightarrow f(x)$ 是偶函数
+
+（3）$F(x)$ 是周期函数 $\Leftrightarrow f(x)$ 是周期函数
+
+（4）$F(x)$ 是单调函数 $\Leftrightarrow f(x)$ 是单调函数
+
+其中正确的结论个数为 __________ 。
+
+<div class="suojin">
+
+A． 1
+
+B． 2
+
+C． 3
+
+D． 4
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">A</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  对于（1），若 $F(x)$ 为奇函数，则 $f(x)$ 为偶函数；若 $f(x)$ 为奇函数，则 $f(x)$ 的所有原函数均为偶函数，（1）正确。
+  
+  <br />
+
+  对于（2），若 $F(x)$ 为偶函数，则 $f(x)$ 为奇函数，但当 $f(x)$ 为偶函数时，<span class="red">$f(x)$ 的原函数中仅有一个是奇函数</span>，（2）错误。
+
+  <br />
+
+  对于（3），若 $F(x)$ 是以 $T$ 为周期的可导函数，则 $f(x)$ 也是以 $T$ 为周期的周期函数，但当 $f(x)$ 为周期函数时，并非所有原函数均为周期函数，（3）错误。
+  
+  > 【例】$f(x)=\begin{aligned}\sin x+1\end{aligned}$ 是周期函数，但 $F(x)=\begin{aligned}-\cos x+x\end{aligned}$ 不是周期函数。
+
+  <br />
+
+  对于（4），若取 $F(x)=\begin{aligned}x^{3}\end{aligned}$ 是单增函数，但 $F^{\prime}(x)=f(x)=\begin{aligned}3x^{2}\end{aligned}$ 不是单调函数，（4）错误。
+  
+  应选 A。
+  
+  </div>
+</details>
+
+</div>
+
+<br />
 
 ## 2 无穷小量及其比阶
 
