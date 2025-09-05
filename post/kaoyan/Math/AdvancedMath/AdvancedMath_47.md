@@ -56,6 +56,14 @@ next: false
 
 <span class="red-bold">【注】</span><span class="kaiti">上面我们提到过，连续的偶函数 $f(x)$ 的原函数中仅有一个原函数是奇函数，这个原函数就是 $F(x) = \begin{aligned}\int_{0}^{x} f(t)  \mathrm{d} t\end{aligned}$。</span>
 
+---
+
+<span class="bold"><span class="red-bold">【补充】</span>复合函数的奇偶性性质</span>
+
+当且仅当内外函数均为奇函数时，复合函数才为奇函数。
+
+即 $f(x)$ 与 $g(x)$ 均为奇函数，则 $f\Big[g(x)\Big]$ 为奇函数。
+
 :::
 
 <br />
@@ -184,19 +192,19 @@ D． $\begin{aligned}\int_{1}^{x} \mathrm{~d} t \int_{0}^{t} \frac{\sin ^{2} u}{
 
 <br />
 
-A． $\begin{aligned}\int_{0}^{x}\left[\cos f(t)+f^{\prime}(t)\right] \mathrm{d} t\end{aligned}$ 必为奇函数
+A． $\begin{aligned}\int_{0}^{x}\Big[\cos f(t)+f^{\prime}(t)\Big] \mathrm{d} t\end{aligned}$ 必为奇函数
 
 <br />
 
-B． $\begin{aligned}\int_{a}^{x}\left[\cos f(t)+f^{\prime}(t)\right] \mathrm{d} t\end{aligned}$ 必为奇函数
+B． $\begin{aligned}\int_{a}^{x}\Big[\cos f(t)+f^{\prime}(t)\Big] \mathrm{d} t\end{aligned}$ 必为奇函数
 
 <br />
 
-C． $\begin{aligned}\int_{0}^{x}\left[\sin f^{\prime}(t)+f(t)\right] \mathrm{d} t\end{aligned}$ 必为偶函数
+C． $\begin{aligned}\int_{0}^{x}\Big[\sin f^{\prime}(t)+f(t)\Big] \mathrm{d} t\end{aligned}$ 必为偶函数
 
 <br />
 
-D． $\begin{aligned}\int_{a}^{x}\left[\sin f^{\prime}(t)+f^{\prime}(t)\right] \mathrm{d} t\end{aligned}$ 必为奇函数
+D． $\begin{aligned}\int_{a}^{x}\Big[\sin f^{\prime}(t)+f^{\prime}(t)\Big] \mathrm{d} t\end{aligned}$ 必为奇函数
 
 </div>
 
@@ -656,7 +664,7 @@ $\begin{aligned}\lim _{x \rightarrow 0} \frac{\ln (1+x) \ln (1-x)-\ln \left(1-x^
 
 ---
 
-求极限：$\begin{aligned}\lim_{x \rightarrow 0} \frac{(1+x)^{\frac{2}{x}}-\mathrm{e}^{2}[1+\ln (1+x)]}{x}\end{aligned}$
+求极限：$\begin{aligned}\lim_{x \rightarrow 0} \frac{(1+x)^{\frac{2}{x}}-\mathrm{e}^{2}\Big[1+\ln (1+x)\Big]}{x}\end{aligned}$
 
 <div class="suojin">
 
@@ -958,6 +966,128 @@ $$
 
 :::
 
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 17 </span>
+
+---
+
+求极限：$\begin{aligned}\lim_{x \rightarrow 0^{+}} \frac{x \begin{aligned}\int_{x}^{x^{2}} \sin(xt)  \mathrm{d}t\end{aligned}}{\begin{aligned}\int_{0}^{x} t \cdot \sin\left(x^{2}-t^{2}\right)  \mathrm{d}t\end{aligned}}\end{aligned}$ 
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 18 </span>
+
+---
+
+求极限：$\begin{aligned}\lim_{x \rightarrow+\infty} \frac{\begin{aligned}\int_{0}^{x} \left[ t^{2} \left( \mathrm{e}^{\frac{1}{t}} - 1 \right) - t \right]  \mathrm{d}t\end{aligned}}{x^{2} \ln \left( 1 + \begin{aligned}\frac{1}{x}\end{aligned} \right)}\end{aligned}$
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 19 </span>
+
+---
+
+求极限：$\begin{aligned}\lim_{x \rightarrow 0} \frac{\begin{aligned}\int_{0}^{x} \mathrm{d}u \int_{0}^{u^{2}} \arctan(1+t)  \mathrm{d}t\end{aligned}}{x(1 - \cos x)}\end{aligned}$
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 20 </span> <span class="red-bold">（2021 年数学二）</span>
+
+---
+
+已知函数 $\begin{aligned}f(t) = \int_{1}^{t^{2}} \mathrm{d}x \int_{\sqrt{x}}^{t} \sin \frac{x}{y}  \mathrm{d}y\end{aligned}$ ，则 $f^{\prime}\left( \begin{aligned}\frac{\pi}{2}\end{aligned} \right) =$ __________ 。
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
 
 <div class="center">
 
@@ -980,6 +1110,114 @@ $$
 （3）若 $\lim \begin{aligned}\frac{f(x)}{g(x)}\end{aligned}=A \neq 0$ ，且 $\lim f(x)=0$ ，则 $\lim g(x)=0$ 。
 
 :::
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 21 </span>
+
+---
+
+已知 $\begin{aligned}\lim _{x \rightarrow+\infty} \mathrm{e}^{x}\left[\int_{0}^{\sqrt{x}} \mathrm{e}^{-t^{2}} \mathrm{~d} t+a\right]=b\end{aligned}$ ，求常数 $a, b$ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$a = -\frac{\sqrt{\pi}}{2},\quad b = \frac{1}{2}$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 22 </span>
+
+---
+
+已知 $\begin{aligned}\lim _{x \rightarrow 0} \frac{2 \arctan x-\ln \begin{aligned}\frac{1+x}{1-x}\end{aligned}}{x^{n}}=c\end{aligned}$ ，且 $c \neq 0$ ，求常数 $n, c$ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$n = 3,\quad c = -\frac{2}{3}$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 23 </span>
+
+---
+
+已知 $\begin{aligned}\lim \left(\sqrt{x^{2}+x+1}-(a x+b)\right)=0\end{aligned}$ ，求常数 $a, b$ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">
+  
+  </span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">刻意练习 </span>
+
+---
+
+设 $\begin{aligned}\lim _{x \rightarrow \infty}\left(\sqrt[3]{x^{3}-1}+a x+b\right)=0\end{aligned}$ ，求常数 $a, b$ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$a = -1,\quad b = 0$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容
+  </div>
+</details>
+
+</div>
+
+<br />
 
 
 <div class="center">
@@ -1019,6 +1257,38 @@ $$
 （5）**求分段函数在分段点处的极限，且分段函数在分段点两侧的函数表达式不同**。
 
 :::
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 24 </span>
+
+---
+
+求 $\begin{aligned}\lim _{x \rightarrow 0}\left(\frac{\ln \left(1+\mathrm{e}^{\frac{2}{x}}\right)}{\ln \left(1+\mathrm{e}^{\frac{1}{x}}\right)}-2[x]\right)\end{aligned}$ ，其中 $[x]$ 为取整函数。
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
 
 ## 4 函数极限的定义与性质
 
@@ -1068,6 +1338,68 @@ $$\lim_{x \rightarrow x_{0}} f(x)=A \Leftrightarrow \forall \ \varepsilon>0, \ex
 
 :::
 
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 25 </span>
+
+---
+
+设 $\begin{aligned}\lim _{x \rightarrow 0^{+}} f(x)\end{aligned}$ 存在，且函数满足 $\begin{aligned}f(x)=\frac{1}{x}-\frac{1-\pi x}{\arctan x}+2\left(1+\frac{1}{x}\right)^{x} \lim _{x \rightarrow 0^{+}} f(x)\end{aligned}$ ，则 $\begin{aligned}\lim _{x \rightarrow 0^{+}} f(x)=\end{aligned}$ __________ 。
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 26 </span>
+
+---
+
+设 $\begin{aligned}\lim _{x \rightarrow 0}\left[\frac{f(x)-1}{\tan x}-\frac{\mathrm{e}^{x} \sin x}{\tan ^{2} x}\right]=2\end{aligned}$ ，则 $\begin{aligned}\lim _{x \rightarrow 0} f(x)=\end{aligned}$ __________ 。
+
+<div class="suojin">
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin"></span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  </div>
+</details>
+
+</div>
+
+<br />
+
 <div class="center">
 
 ### <span class="blue-bold">题型2 函数极限的局部保号性</span>
@@ -1087,6 +1419,60 @@ $$\lim_{x \rightarrow x_{0}} f(x)=A \Leftrightarrow \forall \ \varepsilon>0, \ex
 （2）若 $\begin{aligned} \lim _{x \rightarrow x_{0}} f(x)<\lim _{x \rightarrow x_{0}} g(x) \end{aligned}$ ，则在 $x_{0}$ 的某去心邻域内 $f(x)<g(x)$
 
 :::
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 27 </span>
+
+---
+
+设 $f(x)=\ln ^{10} x$, $g(x)=x$, $h(x)=\mathrm{e}^{\frac{x}{10}}$ ，则当 $x$ 充分大时有 __________ 。
+
+<div class="suojin">
+
+A．$g(x)<h(x)<f(x)$
+
+B．$h(x)<g(x)<f(x)$
+
+C．$f(x)<g(x)<h(x)$
+
+D．$g(x)<f(x)<h(x)$
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">C</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+
+  当 $x$ 充分大时，比较三个函数的增长趋势。
+
+  <br />
+
+  由于 $f(x)=\ln^{10}x$ 是对数函数的高次幂，$g(x)=x$ 是线性函数，$h(x)=\mathrm{e}^{\frac{x}{10}}$ 是指数函数。
+
+  <br />
+
+  指数函数增长最快，线性函数次之，对数函数增长最慢，因此有 $f(x)<g(x)<h(x)$。
+
+  <br />
+
+  应选 C。
+
+  </div>
+</details>
+
+</div>
+
+<br />
 
 <div class="center">
 
@@ -1122,6 +1508,122 @@ $$\lim_{x \rightarrow x_{0}} f(x)=A \Leftrightarrow \forall \ \varepsilon>0, \ex
 
 :::
 
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 28 </span>
+
+---
+
+已知函数 $f(x) = \begin{aligned}\frac{\left(x^{3}-1\right) \sin x}{\left(x^{2}+1\right) x}\end{aligned}$, $g(x) = \begin{aligned}\frac{1}{x} \sin \frac{1}{x}\end{aligned}$ ，则在其定义域内 __________ 。
+
+<div class="suojin">
+
+A．$f(x)$ 有界，$g(x)$ 有界
+
+B．$f(x)$ 有界，$g(x)$ 无界
+
+C．$f(x)$ 无界，$g(x)$ 有界
+
+D．$f(x)$ 无界，$g(x)$ 无界
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">B</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 29 </span>
+
+---
+
+以下四个命题中，正确的是 __________ ．
+
+<div class="suojin">
+
+A．若 $f^{\prime}(x)$ 在 $(0,1)$ 内连续，则 $f(x)$ 在 $(0,1)$ 内有界
+
+B．若 $f(x)$ 在 $(0,1)$ 内连续，则 $f(x)$ 在 $(0,1)$ 内有界
+
+C．若 $f^{\prime}(x)$ 在 $(0,1)$ 内有界，则 $f(x)$ 在 $(0,1)$ 内有界
+
+D．若 $f(x)$ 在 $(0,1)$ 内有界，则 $f^{\prime}(x)$ 在 $(0,1)$ 内有界
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">C</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 30 </span>
+
+---
+
+已知函数 $\begin{aligned}f(x) = \frac{\begin{aligned}\int_{0}^{x} \ln \left(1+t^{2}\right) \mathrm{d} t \end{aligned}}{x^{\alpha}}\end{aligned}$ 在 $(0,+\infty)$ 上有界，则 $\alpha$ 取值范围为 __________ ．
+
+<div class="suojin">
+
+A．$(0,3)$
+
+B．$(0,3]$
+
+C．$(1,3)$
+
+D．$(1,3]$
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">D</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
 ## 5 数列极限的定义与性质
 
 <div class="center">
@@ -1130,6 +1632,211 @@ $$\lim_{x \rightarrow x_{0}} f(x)=A \Leftrightarrow \forall \ \varepsilon>0, \ex
 
 </div>
 
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 31 </span>
+
+---
+
+“对任意给定的 $\varepsilon \in (0,1)$ ，总存在正整数 $N$ ，当 $n \geqslant N$ 时，恒有 $\left|x_{n}-a\right| \leqslant 2 \varepsilon$” 是 “数列 $\left\{x_{n}\right\}$ 收敛于 $a$” 的 __________ ．
+
+<div class="suojin">
+
+A．充分必要条件
+
+B．充分非必要条件
+
+C．必要非充分条件
+
+D．既非充分也非必要条件
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">A</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 32 </span>
+
+---
+
+已知 $a_{n} = \begin{aligned}\sqrt[n]{n}\end{aligned} - \begin{aligned}\frac{(-1)^{n}}{n}\end{aligned}$ $(n=1,2, \cdots)$ ，则 $\left\{a_{n}\right\}$ __________ ．
+
+<div class="suojin">
+
+A．有最大值，有最小值
+
+B．有最大值，没有最小值
+
+C．没有最大值，有最小值
+
+D．没有最大值，没有最小值
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">C</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 33 </span>
+
+---
+
+设 $\left\{x_{n}\right\}$ 是数列，则 “ $\begin{aligned}\lim _{n \rightarrow \infty} \frac{x_{n+1}}{x_{n}}=1\end{aligned}$” 是 “ $\left\{x_{n}\right\}$ 收敛” 的 __________ ．
+
+<div class="suojin">
+
+A．充分必要条件
+
+B．充分非必要条件
+
+C．必要非充分条件
+
+D．既非充分也非必要条件
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">D</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 34 </span>
+
+---
+
+设 $\left\{x_{n}\right\}$ 是数列，且 $\begin{aligned}\lim _{n \rightarrow \infty} x_{3 n}\end{aligned} = \begin{aligned}\lim _{n \rightarrow \infty} x_{3 n+1}\end{aligned} = 1$ ，则 $\left\{x_{n}\right\}$ 收敛的充分条件为 __________ 。
+
+<div class="suojin">
+
+<br />
+
+A．$x_{3 n+2} = \begin{aligned}\left(\frac{\sqrt[n]{2}+\sqrt[n]{3}}{2}\right)^{n}\end{aligned}$
+
+<br />
+
+B．$x_{3 n+2} = \begin{aligned}\left(\sqrt{n^{2}+2 n}-\sqrt{n^{2}-2 n}\right)\end{aligned}$
+
+<br />
+
+C．$x_{3 n+2} =\  \begin{aligned}n \cdot \sqrt[n]{n} \cdot (\sqrt[n]{2}-1)\end{aligned}$
+
+<br />
+
+D．$x_{3 n+2} = \begin{aligned}\sum_{k=1}^{n} \frac{1}{k(k+1)}\end{aligned}$
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">D</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 35 </span>
+
+---
+
+设数列 $\left\{x_{n}\right\}$ 与 $\left\{y_{n}\right\}$ 满足 $\begin{aligned}\lim _{n \rightarrow \infty} x_{n} y_{n} = 0\end{aligned}$ ，则下列断言正确的是 __________ ．
+
+<div class="suojin">
+
+<br />
+
+A．若 $\left\{x_{n}\right\}$ 发散，则 $\left\{y_{n}\right\}$ 发散
+
+<br />
+
+B．若 $\left\{x_{n}\right\}$ 无界，则 $\left\{y_{n}\right\}$ 必有界
+
+<br />
+
+C．若 $\left\{x_{n}\right\}$ 有界，则 $\left\{y_{n}\right\}$ 必为无穷小
+
+<br />
+
+D．若 $\left\{\begin{aligned}\frac{1}{x_{n}}\end{aligned}\right\}$ 为无穷小，则 $\left\{y_{n}\right\}$ 必为有界
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">C</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
 
 <div class="center">
 
@@ -1173,6 +1880,159 @@ $$\lim_{x \rightarrow x_{0}} f(x)=A \Leftrightarrow \forall \ \varepsilon>0, \ex
 
 :::
 
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 36 </span>
+
+---
+
+设实数数列 $\left\{a_{n}\right\}$ ，给出以下四个命题：
+
+<br />
+
+（1）若 $\begin{aligned}\lim _{n \rightarrow \infty} a_{n} = A\end{aligned}$ ，则 $\begin{aligned}\lim _{n \rightarrow \infty} \sin a_{n} = \sin A\end{aligned}$ 。
+
+<br />
+
+
+（2）若 $\begin{aligned}\lim _{n \rightarrow \infty} \sin a_{n} = \sin A\end{aligned}$ ，则 $\begin{aligned}\lim _{n \rightarrow \infty} a_{n} = A\end{aligned}$ 。
+
+<br />
+
+（3）若 $\begin{aligned}\lim _{n \rightarrow \infty} a_{n} = A\end{aligned}$ ，则 $\begin{aligned}\lim _{n \rightarrow \infty} \mathrm{e}^{a_{n}} = \mathrm{e}^{A}\end{aligned}$ 。
+
+<br />
+
+（4）若 $\begin{aligned}\lim _{n \rightarrow \infty} \mathrm{e}^{a_{n}} = \mathrm{e}^{A}\end{aligned}$ ，则 $\begin{aligned}\lim _{n \rightarrow \infty} a_{n} = A\end{aligned}$ 。
+
+<br />
+
+其中真命题的个数是 __________ ．
+
+<div class="suojin">
+
+A． 1
+
+B． 2
+
+C． 3
+
+D． 4
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">B</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 37 </span>
+
+---
+
+（2022 年真题）已知数列 $\left\{x_{n}\right\}$ ，其中 $-\begin{aligned}\frac{\pi}{2}\end{aligned} \leqslant x_{n} \leqslant \begin{aligned}\frac{\pi}{2}\end{aligned}$ ，则 __________ ．
+
+<div class="suojin">
+
+<br />
+
+A．当 $\begin{aligned}\lim _{n \rightarrow \infty} \cos (\sin x_{n})\end{aligned}$ 存在时，$\begin{aligned}\lim _{n \rightarrow \infty} x_{n}\end{aligned}$ 存在
+
+<br />
+
+
+B．当 $\begin{aligned}\lim _{n \rightarrow \infty} \sin (\cos x_{n})\end{aligned}$ 存在时，$\begin{aligned}\lim _{n \rightarrow \infty} x_{n}\end{aligned}$ 存在
+
+<br />
+
+
+C．当 $\begin{aligned}\lim _{n \rightarrow \infty} \cos (\sin x_{n})\end{aligned}$ 存在时，$\begin{aligned}\lim _{n \rightarrow \infty} \sin x_{n}\end{aligned}$ 存在，但 $\begin{aligned}\lim _{n \rightarrow \infty} x_{n}\end{aligned}$ 不一定存在
+
+<br />
+
+D．当 $\begin{aligned}\lim _{n \rightarrow \infty} \sin (\cos x_{n})\end{aligned}$ 存在时，$\begin{aligned}\lim _{n \rightarrow \infty} \cos x_{n}\end{aligned}$ 存在，但 $\begin{aligned}\lim _{n \rightarrow \infty} x_{n}\end{aligned}$ 不一定存在
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">D</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 38 </span>
+
+---
+
+（2024 年真题）已知数列 $\left\{a_{n}\right\} \left(a_{n} \neq 0\right)$ ，若 $\left\{a_{n}\right\}$ 发散，则 __________ ．
+
+<div class="suojin">
+
+<br />
+
+A．$\left\{a_{n} + \begin{aligned}\frac{1}{a_{n}}\end{aligned}\right\}$ 发散
+
+<br />
+
+B．$\left\{a_{n} - \begin{aligned}\frac{1}{a_{n}}\end{aligned}\right\}$ 发散
+
+<br />
+
+C．$\left\{\mathrm{e}^{a_{n}} + \begin{aligned}\frac{1}{\mathrm{e}^{a_{n}}}\end{aligned}\right\}$ 发散
+
+<br />
+
+D．$\left\{\mathrm{e}^{a_{n}} - \begin{aligned}\frac{1}{\mathrm{e}^{a_{n}}}\end{aligned}\right\}$ 发散
+
+</div>
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">C</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
 ## 6 数列极限计算
 
 <div class="center">
@@ -1194,6 +2054,32 @@ $$\lim_{x \rightarrow x_{0}} f(x)=A \Leftrightarrow \forall \ \varepsilon>0, \ex
 $$\begin{aligned}\lim _{x \rightarrow+\infty} f(x)=A \Rightarrow \lim _{n \rightarrow \infty} f(n)=A\end{aligned}$$
 
 :::
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 39 </span>
+
+---
+
+求极限 $\begin{aligned}\lim _{n \rightarrow \infty} n^{2} \left( \arctan \frac{a}{n} - \arctan \frac{a}{n+1} \right)\end{aligned}$ ，其中参数 $a \neq 0$ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$a$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
 
 <div class="center">
 
@@ -1232,6 +2118,62 @@ $$\begin{aligned}\lim _{x \rightarrow+\infty} f(x)=A \Rightarrow \lim _{n \right
 则数列 $\left\{x_{n}\right\}$ 极限存在，且 $\begin{aligned}\lim _{n \rightarrow \infty} x_{n}=a\end{aligned}$ 。
 :::
 
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 40 </span> （基础题）
+
+---
+
+（I）求 $\begin{aligned}\lim _{n \rightarrow \infty} \frac{1}{n} \left[ \ln \left(1 + \frac{1}{n}\right) + \ln \left(1 + \frac{2}{n}\right) + \cdots + \ln \left(1 + \frac{n}{n}\right) \right]\end{aligned}$ 。
+
+<br />
+
+（II）求 $\begin{aligned}\lim _{n \rightarrow \infty} \frac{1}{n} \left[ \ln \left(1 + \frac{1}{n}\right) + \ln \left(1 + \frac{2}{n}\right) + \cdots + \ln \left(1 + \frac{2n}{n}\right) \right]\end{aligned}$ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$\begin{aligned}\int_{0}^{1} \ln(1+x) \mathrm{d}x = 2\ln2 - 1\end{aligned}$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 41 </span>
+
+---
+
+求极限 $\begin{aligned}\lim _{n \rightarrow \infty} \left[ \frac{\sin \begin{aligned}\frac{\pi}{n}\end{aligned}}{n+1} + \frac{\sin \begin{aligned}\frac{2 \pi}{n}\end{aligned}}{n+\begin{aligned}\frac{1}{2}\end{aligned}} + \cdots + \frac{\sin \pi}{n+ \begin{aligned} \frac{1}{n}\end{aligned}} \right]\end{aligned}$ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$\begin{aligned}\frac{2}{\pi}\end{aligned}$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
 <div class="center">
 
 ### <span class="blue-bold">题型3 $n$ 项积式数列极限</span>
@@ -1243,6 +2185,58 @@ $$\begin{aligned}\lim _{x \rightarrow+\infty} f(x)=A \Rightarrow \lim _{n \right
 <span class="bold">取对数</span>（将 $n$ 项积问题转化为 $n$ 项和问题），再利用题型 2 的求解方法进行处理。
 
 :::
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 42 </span>
+
+---
+
+求极限 $\begin{aligned}\lim _{n \rightarrow \infty} \sqrt[n]{\left(1 + \frac{1}{n^{2}}\right) \cdot \left(1 + \frac{2^{2}}{n^{2}}\right) \cdots \left(1 + \frac{n^{2}}{n^{2}}\right)}\end{aligned}$ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$1$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">刻意练习</span>
+
+---
+
+极限 $\begin{aligned}\lim _{n \rightarrow \infty} \frac{\sqrt[n]{n!}}{n}\end{aligned} =$ __________ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$\begin{aligned}\frac{1}{e}\end{aligned}$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
 
 <div class="center">
 
@@ -1264,6 +2258,66 @@ $$\begin{aligned}\lim _{x \rightarrow+\infty} f(x)=A \Rightarrow \lim _{n \right
 <span class="red-bold">【注】</span>上式中（2）若改为 $\begin{aligned}\lim _{n\rightarrow \infty}\left(z_{n}-y_{n}\right)=0\end{aligned}$ ，则无法确定 $\begin{aligned}\lim _{n \rightarrow \infty} x_{n}\end{aligned}$ 的存在性。
 
 :::
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 44 </span>
+
+---
+
+设周期为 1 的周期函数 $f(x) = x - [x]$ （$[x]$ 表示不超过 $x$ 的最大整数）。
+
+（I）当 $n \leqslant x < n+1$ （$n$ 为正整数）时，证明：$\begin{aligned}\frac{n}{2} \leqslant \int_{0}^{x} f(t) \mathrm{d} t < \frac{n+1}{2}\end{aligned}$
+
+（II）求 $\begin{aligned}\lim _{x \rightarrow+\infty} \frac{1}{x} \int_{0}^{x} f(t) \mathrm{d} t\end{aligned}$ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">（I）证明略；（II）$\begin{aligned}\frac{1}{2}\end{aligned}$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">刻意练习</span>
+
+---
+
+设函数 $f(x)$ 为非负且以 $T$ 为周期的连续周期函数，证明：
+
+$$\begin{aligned}\lim _{x \rightarrow+\infty} \frac{\begin{aligned}\int_{0}^{x} f(t) \mathrm{d} t\end{aligned}}{x} = \frac{1}{T} \int_{0}^{T} f(t) \mathrm{d} t\end{aligned}$$
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">证明略</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
 
 <div class="center">
 
@@ -1350,6 +2404,60 @@ $$
 $$
 
 :::
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 45 </span>
+
+---
+
+设数列 $\left\{x_{n}\right\}$ 满足：$x_{1} > 0, x_{n} \mathrm{e}^{x_{n+1}} = \mathrm{e}^{x_{n}} - 1$ （$n = 1, 2, \cdots$）。试证明 $\left\{x_{n}\right\}$ 收敛，并求 $\begin{aligned}\lim _{n \rightarrow \infty} x_{n}\end{aligned}$ 。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$\begin{aligned}\lim _{n \rightarrow \infty} x_{n} = 0\end{aligned}$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
+
+<div class="kuang">
+
+<span class="bold heiti green-bold">强化 46 </span>
+
+---
+
+设 $x_{1} = 1, x_{n+1} = \begin{aligned}\frac{1 + 2 x_{n}}{1 + x_{n}}\end{aligned}$ （$n = 1, 2, \cdots$），试证数列 $\left\{x_{n}\right\}$ 极限存在，并求此极限。
+
+---
+
+<details>
+  <summary><span class="red-bold">【答案】</span></summary>
+  <span class="bold suojin">$\begin{aligned}\lim _{n \rightarrow \infty} x_{n} = \sqrt{2}\end{aligned}$</span>
+</details>
+
+<details>
+  <summary><span class="green-bold">【解析】</span></summary>
+  <div class="kaiti suojin">
+  解析内容占位
+  </div>
+</details>
+
+</div>
+
+<br />
 
 ## 7 连续与间断
 
